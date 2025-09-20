@@ -1,0 +1,89 @@
+state = {
+	id = 137
+	name = "STATE_137"
+	manpower = 1361607
+	resources = {
+		steel = 10
+		aluminium = 4
+		tungsten=2
+		oil=5
+	}
+	
+	state_category = city
+	buildings_slots = 18
+
+	history = {
+
+		owner = CRI
+
+		victory_points = {
+			3686 20 # Sevastopol
+		}
+
+		victory_points = {
+			9680 1 # Kerch
+		}
+
+		victory_points = {
+			6704 1 # Yalta
+		}
+
+		victory_points = {
+			705 3 # Simferopol
+		}
+
+		buildings = {
+
+			infrastructure = 3
+			dockyard = 2
+			air_base = 3
+			arms_factory = 4
+			industrial_complex = 5
+
+			3686 = {
+				naval_base = 10
+				coastal_bunker = 3
+			}
+
+			9680 = {
+				naval_base = 1
+				coastal_bunker = 2
+				bunker = 5
+			}
+			3722 = {
+				bunker = 5
+				coastal_bunker = 1
+			}
+			6704 = {
+				coastal_bunker = 2
+			}
+			
+			9677 = {
+				coastal_bunker = 1
+			}
+			
+			9718 = {
+				coastal_bunker = 1
+			}
+			
+			11649 = {
+				coastal_bunker = 1
+			}
+			
+			705 = {
+				coastal_bunker = 3
+			}
+			
+		}
+
+		add_claim_by = SOV
+		add_core_of = CRI
+
+	}
+
+	provinces = {
+		705 3686 3722 6704 6724 9677 9680 9718 11649 
+	}
+
+	local_supplies = 10.0 
+}

@@ -1,0 +1,74 @@
+﻿CRI_INF_01 = 
+{
+	name = "Kryms'ka devisia"
+
+	for_countries = { CRI }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CRI_INF_01 }
+
+	fallback_name = "%d. Kryms'ka devisia"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kryms'ka devisia" }
+		2 = { "%d. Kryms'ka devisia" }
+		3 = { "%d. Kryms'ka devisia" }
+		4 = { "%d. Kryms'ka devisia" }
+		5 = { "%d. Kryms'ka devisia" }
+		6 = { "%d. Kryms'ka devisia" }
+		7 = { "%d. Kryms'ka devisia" }
+		8 = { "%d. Kryms'ka devisia" }
+		9 = { "%d. Kryms'ka devisia" }
+		10 = { "%d. Kryms'ka devisia" }
+		11 = { "%d. Kryms'ka devisia" }
+		12 = { "%d. Kryms'ka devisia" }
+		13 = { "%d. Kryms'ka devisia" }
+		14 = { "%d. Kryms'ka devisia" }
+		15 = { "%d. Kryms'ka devisia" }
+		16 = { "%d. Kryms'ka devisia" }
+		17 = { "%d. Kryms'ka devisia" }
+		18 = { "%d. Kryms'ka devisia" }
+		19 = { "%d. Kryms'ka devisia" }
+		20 = { "%d. Kryms'ka devisia" }		
+	}
+}
+
+CRI_CAV_01 = 
+{
+	name = "Kryms'ka kavaleria"
+
+	for_countries = { CRI }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	# Number reservation system will tie to another group.
+	#link_numbering_with = { CRI_INF_01 }
+
+	fallback_name = "%d. Kryms'ka kavaleria"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%d. Kryms'ka kavaleria" }
+		2 = { "%d. Kryms'ka kavaleria" }
+		3 = { "%d. Kryms'ka kavaleria" }
+		4 = { "%d. Kryms'ka kavaleria" }
+		5 = { "%d. Kryms'ka kavaleria" }
+		6 = { "%d. Kryms'ka kavaleria" }
+		7 = { "%d. Kryms'ka kavaleria" }
+		8 = { "%d. Kryms'ka kavaleria" }
+		9 = { "%d. Kryms'ka kavaleria" }
+		10 = { "%d. Kryms'ka kavaleria" }
+	}
+}
+

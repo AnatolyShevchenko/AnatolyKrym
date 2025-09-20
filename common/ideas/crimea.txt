@@ -1,0 +1,77 @@
+ideas = {
+		country = {
+			CRI_anti_chess_politic = {
+			name = CRI_anti_chess_politic
+			picture = chi_war_of_resistance
+			allowed = {
+				always = no
+				has_government = communism
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						has_government = communism
+					}
+				}
+			}
+			
+			available = {
+				has_government = communism
+			}
+
+			modifier = {
+				conscription = -0.005
+				production_speed_arms_factory_factor = -0.20
+				industrial_capacity_factory = -0.15
+				military_industrial_organization_funds_gain = -0.1
+				experience_gain_army_factor = -0.25
+				experience_gain_air_factor = -0.25
+				stability_factor = -0.15
+				war_support_factor = -0.10
+				fascism_drift = 0.01
+				political_power_factor = -0.1
+			}
+		}
+		
+			CRI_bezrabotica = {
+			name = CRI_bezrabotica
+			picture = usa_great_depression_3
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				production_speed_buildings_factor = -0.2
+				political_power_factor = -0.3
+			}
+		}
+		
+		CRI_anatoly_protestes = {
+			name = CRI_anatoly_protestes
+			picture = generic_disjointed_gov
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = no
+			}
+			
+			available = {
+				has_war = no
+			}
+
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

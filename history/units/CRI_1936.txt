@@ -1,0 +1,117 @@
+﻿division_template = {
+	name = "Kryms'ka devisia"			#Infantry Division - In 1936, Albania only had one triangular division.	They did have some tankettes and infantry support tanks, so 1 recon
+	division_names_group = CRI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kryms'ka kavaleria"			#Infantry Division - In 1936, Albania only had one triangular division.	They did have some tankettes and infantry support tanks, so 1 recon
+	division_names_group = CRI_GAR_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	################################
+	########Kryms'ka devisia########
+	################################
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3686
+		division_template = "Kryms'ka devisia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3686
+		division_template = "Kryms'ka devisia"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+
+	}
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9680
+		division_template = "Kryms'ka devisia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.6
+
+	}
+	
+	################################
+	#######Kryms'ka kavaleria#######
+	################################
+	
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 705
+		division_template = "Kryms'ka kavaleria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9
+
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "CRI"
+		}
+		requested_factories = 2
+		progress = 0.20
+		efficiency = 90
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "CRI"
+		}
+		requested_factories = 2
+		progress = 0.40
+		efficiency = 100
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = GER 
+		}
+		requested_factories = 1
+		progress = 0.7
+		efficiency = 70
+	}
+}
