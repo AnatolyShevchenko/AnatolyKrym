@@ -1,0 +1,19 @@
+focus_tree = {
+	id = Crimea
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CRI
+		}
+	}
+	default = no
+	focus = {
+		id = CRI_restovration
+		icon = GFX_focus_CRI_restovration
+		cost = 10,00
+		x = 12
+		y = 0
+
+	}
+}
