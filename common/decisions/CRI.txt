@@ -1,0 +1,35 @@
+anatoly_protestes = {
+ 	anatoly_protestes_z = {
+		icon = generic_army_support
+			available = { 
+			hidden_trigger = { always = no }
+			}
+			
+			allowed = { tag = HAI }
+			
+			days_mission_timeout = 7
+			is_good = yes
+
+			timeout_effect = {
+				random_list = {
+					45 = {
+					activate_mission = anatoly_protestes_z
+					CRI = { country_event = crimea.1 }
+					}
+					
+					55 = {
+					activate_mission = anatoly_protestes_zs
+					}
+				}
+			}
+			
+			activation = {
+			CRI = { has_idea = CRI_anatoly_protestes }
+			always = yes
+			}
+
+			visible = {
+			CRI = { has_idea = CRI_anatoly_protestes }
+			}
+ 	}
+}

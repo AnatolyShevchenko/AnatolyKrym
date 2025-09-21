@@ -1,0 +1,7 @@
+anatoly_protestes = {
+	icon = generic_construction
+	priority = 100
+	visible_when_empty = yes
+	
+	allowed = { tag = HAI }
+}

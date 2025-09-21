@@ -8824,9 +8824,21 @@ spriteTypes = {
 		texturefile = "gfx/leaders/SAU/Portrait_Arabia_Generic_2.dds"
 	}
 	
+	##############КРЫМ ШАХМАТЫ!!!!######################
+	
 	spriteType = {
 		name = GFX_shashkovi_sovet
 		texturefile = "gfx/leaders/CRI/CRI_shashkovi_sovet.dds"
+	}
+	
+	spriteType = {
+		name = GFX_shakhmatni_sovet
+		texturefile = "gfx/leaders/CRI/CRI_shakhmatni_sovet.dds"
+	}
+	
+	spriteType = {
+		name = GFX_koti
+		texturefile = "gfx/leaders/CRI/CRI_koti.dds"
 	}
 
 }

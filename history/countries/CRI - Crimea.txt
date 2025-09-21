@@ -43,5 +43,7 @@ add_ideas = {
 
 
 recruit_character = CRI_shashkovi_sovet
+recruit_character = CRI_shakhmatni_sovet
+recruit_character = CRI_koti
 
 

@@ -1,0 +1,22 @@
+﻿add_namespace = crimea
+
+country_event = {
+	id = crimea.1
+	title = crimea.1.t
+	desc = crimea.1.d
+	
+	picture = GFX_report_event_hungary_parliament
+	
+	is_triggered_only = yes
+
+	option = {
+		name = crimea.1.a
+		add_stability = -0.02
+		add_political_power = -10
+		add_war_support = 0.01
+		add_popularity = {
+				ideology = fascism
+				popularity = 0.025
+			}
+	}
+}
