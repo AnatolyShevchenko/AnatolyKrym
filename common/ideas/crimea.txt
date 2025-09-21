@@ -58,6 +58,7 @@ ideas = {
 			picture = generic_disjointed_gov
 			allowed = {
 				always = no
+				has_government = communism
 			}
 			
 			allowed_civil_war = {
@@ -65,7 +66,7 @@ ideas = {
 			}
 			
 			available = {
-				has_war = no
+				has_government = communism
 			}
 
 			modifier = {

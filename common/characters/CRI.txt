@@ -17,5 +17,42 @@ characters={
         }
 		}
 	}
+	
+	CRI_shakhmatni_sovet = {
+		name = "Shakhmatni_sovet" 
+		desc = "Shakhmatni_sovet_DESC"
+		portraits = {
+			civilian = {
+				large = GFX_shakhmatni_sovet
+			}
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1999.1.1.1"
+			id = -1
+			traits = {
+            conservative_grandee
+			nationalist_symbol
+        }
+		}
+	}
+	
+	CRI_koti = {
+		name = "Koti" 
+		desc = "Koti_DESC"
+		portraits = {
+			civilian = {
+				large = GFX_koti
+			}
+		}
+		country_leader = {
+			ideology = liberalism
+			expire = "1950.1.1.1"
+			id = -1
+			traits = {
+            liberal_democratic_paragon
+        }
+		}
+	}
 }
 	
