@@ -11,9 +11,106 @@ focus_tree = {
 	focus = {
 		id = CRI_restovration
 		icon = GFX_focus_CRI_restovration
-		cost = 10,00
+		cost = 5,00
+		mutually_exclusive = {
+			focus = CRI_shashki
+		}
 		x = 12
 		y = 0
+
+	}
+	focus = {
+		id = CRI_shashki
+		icon = GFX_goal_unknown
+		cost = 10,00
+		mutually_exclusive = {
+			focus = CRI_restovration
+		}
+		x = 21
+		y = 0
+
+	}
+	focus = {
+		id = CRI_UkrainePowers
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = CRI_restovration
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = CRI_UkraineCrimea
+		icon = GFX_goal_unknown
+		cost = 3,50
+		prerequisite = {
+			focus = CRI_UkrainePowers
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = CRI_InviteFarmers
+		icon = GFX_goal_unknown
+		cost = 3,50
+		prerequisite = {
+			focus = CRI_UkrainePowers
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = CRI_fondShahmat
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = CRI_restovration
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = CRI_InviteMagnusCarlsen
+		icon = GFX_goal_unknown
+		cost = 3,50
+		prerequisite = {
+			focus = CRI_fondShahmat
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = CRI_UnPrisonPawns
+		icon = GFX_goal_unknown
+		cost = 3,50
+		prerequisite = {
+			focus = CRI_fondShahmat
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = CRI_InviteAnatoly
+		icon = GFX_goal_unknown
+		cost = 5,00
+		prerequisite = {
+			focus = CRI_UkraineCrimea
+		}
+		prerequisite = {
+			focus = CRI_UnPrisonPawns
+		}
+		prerequisite = {
+			focus = CRI_restovration
+		}
+		x = 12
+		y = 3
 
 	}
 }
