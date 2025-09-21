@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+
 	focus = {
 		id = CRI_restovration
 		icon = GFX_focus_CRI_restovration
@@ -21,7 +22,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_shashki
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ShahkovySovet
 		cost = 10,00
 		mutually_exclusive = {
 			focus = CRI_restovration
@@ -32,7 +33,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_UkrainePowers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_UkrainPowers
 		cost = 5,00
 		prerequisite = {
 			focus = CRI_restovration
@@ -43,7 +44,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_UkraineCrimea
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CRI_Crimea
 		cost = 3,50
 		prerequisite = {
 			focus = CRI_UkrainePowers
@@ -54,7 +55,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_InviteFarmers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_farmland
 		cost = 3,50
 		prerequisite = {
 			focus = CRI_UkrainePowers
@@ -65,7 +66,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_fondShahmat
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ShahmotnyFond
 		cost = 5,00
 		prerequisite = {
 			focus = CRI_restovration
@@ -76,7 +77,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_InviteMagnusCarlsen
-		icon = GFX_goal_unknown
+		icon = GFX_focus_invite_MagnusCarlsen
 		cost = 3,50
 		prerequisite = {
 			focus = CRI_fondShahmat
@@ -87,7 +88,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_UnPrisonPawns
-		icon = GFX_goal_unknown
+		icon = GFX_focus_generic_subjugation
 		cost = 3,50
 		prerequisite = {
 			focus = CRI_fondShahmat
@@ -98,7 +99,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_InviteAnatoly
-		icon = GFX_goal_unknown
+		icon = GFX_focus_CRI_InviteAnatoly
 		cost = 5,00
 		prerequisite = {
 			focus = CRI_UkraineCrimea
@@ -111,6 +112,17 @@ focus_tree = {
 		}
 		x = 12
 		y = 3
+
+	}
+	focus = {
+		id = CRI_DocumentDestroy
+		icon = GFX_focus_BRA_repeale_national_security_law
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_InviteAnatoly
+		}
+		x = 12
+		y = 4
 
 	}
 }
