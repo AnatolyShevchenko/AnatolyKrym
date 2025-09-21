@@ -31,6 +31,10 @@ state = {
 		victory_points = {
 			705 3 # Simferopol
 		}
+		
+		victory_points = {
+			13377 15 # Shelkino
+		}
 
 		buildings = {
 
@@ -82,7 +86,7 @@ state = {
 	}
 
 	provinces = {
-		705 3686 3722 6704 6724 9677 9680 9718 11649 
+		705 3686 3722 6704 6724 9677 9680 9718 11649 13376 13377 
 	}
 
 	local_supplies = 10.0 

@@ -12,13 +12,13 @@ anatoly_protestes = {
 
 			timeout_effect = {
 				random_list = {
-					45 = {
-					activate_mission = anatoly_protestes_z
+					35 = {
 					CRI = { country_event = crimea.1 }
+					activate_mission = anatoly_protestes_z
 					}
 					
-					55 = {
-					activate_mission = anatoly_protestes_zs
+					65 = {
+					activate_mission = anatoly_protestes_z
 					}
 				}
 			}
