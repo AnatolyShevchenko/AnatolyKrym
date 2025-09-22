@@ -577,24 +577,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CRI_IdeaOfCrimeaEmpire
 		}
-		mutually_exclusive = {
-			focus = CRI_KhersonCapture
-		}
 		x = 29
-		y = 11
-
-	}
-	focus = {
-		id = CRI_KhersonCapture
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = CRI_IdeaOfCrimeaEmpire
-		}
-		mutually_exclusive = {
-			focus = CRI_KhersonSubordination
-		}
-		x = 36
 		y = 11
 
 	}
@@ -604,9 +587,8 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KhersonSubordination
-			focus = CRI_KhersonCapture
 		}
-		x = 32
+		x = 33
 		y = 12
 
 	}
@@ -616,9 +598,8 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KhersonSubordination
-			focus = CRI_KhersonCapture
 		}
-		x = 36
+		x = 37
 		y = 12
 
 	}
@@ -632,7 +613,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CRI_KrasnodarSubordination
 		}
-		x = 32
+		x = 33
 		y = 13
 
 	}
@@ -646,8 +627,44 @@ focus_tree = {
 		prerequisite = {
 			focus = CRI_ZaporizhiaSubordination
 		}
-		x = 36
+		x = 37
 		y = 13
+
+	}
+	focus = {
+		id = CRI_AzovEmpire
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_StalinoSubordination
+		}
+		prerequisite = {
+			focus = CRI_RostovSabordination
+		}
+		x = 35
+		y = 14
+
+	}
+	focus = {
+		id = CRI_ExpandInfluenceToTheSouth
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_AzovEmpire
+		}
+		x = 35
+		y = 15
+
+	}
+	focus = {
+		id = CRI_CreateChessAlly
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_IdeaOfCrimeaEmpire
+		}
+		x = 40
+		y = 11
 
 	}
 	focus = {
@@ -660,7 +677,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = CRI_ShashkoviDocumentDestroy
 		}
-		x = 41
+		x = 48
 		y = 6
 
 	}
@@ -845,7 +862,6 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KhersonSubordination
-			focus = CRI_KhersonCapture
 		}
 		x = 29
 		y = 12
@@ -857,24 +873,9 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KhersonSubordination
-			focus = CRI_KhersonCapture
 		}
 		x = 25
 		y = 12
-
-	}
-	focus = {
-		id = CRI_ExpandInfluenceToTheSouth
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = CRI_StalinoSubordination
-		}
-		prerequisite = {
-			focus = CRI_RostovSabordination
-		}
-		x = 34
-		y = 14
 
 	}
 	focus = {
@@ -888,7 +889,254 @@ focus_tree = {
 			focus = CRI_OdessaSubordination
 		}
 		x = 27
-		y = 14
+		y = 15
+
+	}
+	focus = {
+		id = CRI_OldRegions
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_ExpandInfluenceToTheSouth
+		}
+		prerequisite = {
+			focus = CRI_ExpandInfluenceToTheNorth
+		}
+		x = 31
+		y = 16
+
+	}
+	focus = {
+		id = CRI_UkraineCevilWar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 26
+		y = 17
+
+	}
+	focus = {
+		id = CRI_KubatCevilWar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 28
+		y = 17
+
+	}
+	focus = {
+		id = CRI_CaucasusCevilWar
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 30
+		y = 17
+
+	}
+	focus = {
+		id = CRI_TurkeyCapture
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 32
+		y = 17
+
+	}
+	focus = {
+		id = CRI_PlanSedoyAzov
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 34
+		y = 17
+
+	}
+	focus = {
+		id = CRI_PlanRoconda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_OldRegions
+		}
+		x = 36
+		y = 17
+
+	}
+	focus = {
+		id = CRI_BlackSeaEmpire
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_PlanRoconda
+		}
+		prerequisite = {
+			focus = CRI_PlanSedoyAzov
+		}
+		prerequisite = {
+			focus = CRI_CaucasusCevilWar
+		}
+		prerequisite = {
+			focus = CRI_KubatCevilWar
+		}
+		prerequisite = {
+			focus = CRI_UkraineCevilWar
+		}
+		x = 31
+		y = 18
+
+	}
+	focus = {
+		id = CRI_CrimeaFuture
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_BlackSeaEmpire
+		}
+		x = 31
+		y = 19
+
+	}
+	focus = {
+		id = CRI_ConflictWithYugoslavia
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_CrimeaFuture
+		}
+		x = 26
+		y = 20
+
+	}
+	focus = {
+		id = CRI_WarWithSoviets
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_CrimeaFuture
+		}
+		mutually_exclusive = {
+			focus = CRI_PeaceWithSoviets
+		}
+		x = 38
+		y = 20
+
+	}
+	focus = {
+		id = CRI_PeaceWithSoviets
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_CrimeaFuture
+		}
+		mutually_exclusive = {
+			focus = CRI_WarWithSoviets
+		}
+		x = 35
+		y = 20
+
+	}
+	focus = {
+		id = CRI_AntiCommunismPropaganda
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_WarWithSoviets
+		}
+		x = 38
+		y = 21
+
+	}
+	focus = {
+		id = CRI_FinallBlowToTheUSSR
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_AntiCommunismPropaganda
+		}
+		x = 38
+		y = 22
+
+	}
+	focus = {
+		id = CRI_AttackThirdReichWithUSSR
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_PeaceWithSoviets
+		}
+		x = 35
+		y = 21
+
+	}
+	focus = {
+		id = CRI_WorldPeace
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_AttackThirdReichWithUSSR
+		}
+		x = 35
+		y = 22
+
+	}
+	focus = {
+		id = CRI_WarAgainstThirdReich
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_ConflictWithYugoslavia
+		}
+		mutually_exclusive = {
+			focus = CRI_PeaceWithThirdReich
+		}
+		x = 27
+		y = 21
+
+	}
+	focus = {
+		id = CRI_PeaceWithThirdReich
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_ConflictWithYugoslavia
+		}
+		mutually_exclusive = {
+			focus = CRI_WarAgainstThirdReich
+		}
+		x = 25
+		y = 21
+
+	}
+	focus = {
+		id = CRI_ThirdReichDanger
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_WarAgainstThirdReich
+		}
+		x = 27
+		y = 22
+
+	}
+	focus = {
+		id = CRI_USSRDanger
+		icon = GFX_goal_unknown
+		cost = 10,00
+		prerequisite = {
+			focus = CRI_PeaceWithThirdReich
+		}
+		x = 25
+		y = 22
 
 	}
 }
