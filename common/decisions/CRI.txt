@@ -7,17 +7,17 @@ anatoly_protestes = {
 			
 			allowed = { tag = HAI }
 			
-			days_mission_timeout = 7
+			days_mission_timeout = 20
 			is_good = yes
 
 			timeout_effect = {
 				random_list = {
-					35 = {
+					75 = {
 					CRI = { country_event = crimea.1 }
 					activate_mission = anatoly_protestes_z
 					}
 					
-					65 = {
+					25 = {
 					activate_mission = anatoly_protestes_z
 					}
 				}

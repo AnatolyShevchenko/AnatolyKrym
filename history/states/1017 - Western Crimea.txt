@@ -1,0 +1,76 @@
+state = {
+	id = 1017
+	name = "STATE_1017"
+	manpower = 544642
+	
+	resources = {
+		tungsten=2
+		oil=5
+	}
+	
+	state_category = rural
+
+	history = {
+
+		owner = CRI
+		add_claim_by = SOV
+		add_core_of = CRI
+		
+		victory_points = {
+			9680 1 # Kerch
+		}
+		
+		victory_points = {
+			13377 15 # Shelkino
+		}
+		
+		victory_points = {
+			13378 1 # Feodosia
+		}
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+			
+			9680 = {
+			coastal_bunker = 2
+			bunker = 3
+			naval_base = 1
+			}
+				
+			13377 = {
+			coastal_bunker = 1
+			}
+			
+			13378 = {
+			coastal_bunker = 1
+			}
+				
+			9677 = {
+			coastal_bunker = 1
+			}
+			
+			9718 = {
+			coastal_bunker = 1
+			}
+			
+			13379 = {
+			coastal_bunker = 1
+			}
+			
+			13376 = {
+			bunker = 3
+			coastal_bunker = 1
+			}
+			
+			}
+
+		}
+
+	provinces = {
+		9680 13377 13378 9677 9718 13379 13376
+	}
+
+	local_supplies = 10.0 
+}
