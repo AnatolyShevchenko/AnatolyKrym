@@ -1,16 +1,13 @@
 state = {
 	id = 137
 	name = "STATE_137"
-	manpower = 1361607
+	manpower = 816965
 	resources = {
 		steel = 10
 		aluminium = 4
-		tungsten=2
-		oil=5
 	}
 	
 	state_category = city
-	buildings_slots = 18
 
 	history = {
 
@@ -18,10 +15,6 @@ state = {
 
 		victory_points = {
 			3686 20 # Sevastopol
-		}
-
-		victory_points = {
-			9680 1 # Kerch
 		}
 
 		victory_points = {
@@ -33,41 +26,37 @@ state = {
 		}
 		
 		victory_points = {
-			13377 15 # Shelkino
+			13380 1 # Alushta
+		}
+		
+		
+		victory_points = {
+			13384 1 # Evpatoria
+		}
+		
+		victory_points = {
+			13382 1 # Djankoi
 		}
 
 		buildings = {
 
 			infrastructure = 3
-			dockyard = 2
+			dockyard = 1
 			air_base = 3
-			arms_factory = 4
-			industrial_complex = 5
+			arms_factory = 2
+			industrial_complex = 2
 
 			3686 = {
-				naval_base = 10
+				naval_base = 5
 				coastal_bunker = 3
 			}
-
-			9680 = {
-				naval_base = 1
-				coastal_bunker = 2
-				bunker = 5
-			}
+			
 			3722 = {
-				bunker = 5
+				bunker = 3
 				coastal_bunker = 1
 			}
 			6704 = {
 				coastal_bunker = 2
-			}
-			
-			9677 = {
-				coastal_bunker = 1
-			}
-			
-			9718 = {
-				coastal_bunker = 1
 			}
 			
 			11649 = {
@@ -78,6 +67,25 @@ state = {
 				coastal_bunker = 3
 			}
 			
+			13380 = {
+				coastal_bunker = 1
+			}
+			
+			13385 = {
+				coastal_bunker = 1
+			}
+			
+			13384 = {
+				coastal_bunker = 1
+			}
+			
+			13383 = {
+				coastal_bunker = 1
+			}
+			
+			13381 = {
+				coastal_bunker = 1
+			}
 		}
 
 		add_claim_by = SOV
@@ -86,7 +94,7 @@ state = {
 	}
 
 	provinces = {
-		705 3686 3722 6704 6724 9677 9680 9718 11649 13376 13377 
+		705 3686 3722 6704 6724 11649 13380 13381 13382 13383 13384 13385
 	}
 
 	local_supplies = 10.0 
