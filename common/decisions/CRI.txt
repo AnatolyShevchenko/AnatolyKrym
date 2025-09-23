@@ -1,7 +1,10 @@
 anatoly_protestes = {
  	anatoly_protestes_z = {
 		icon = generic_army_support
-			available = { 
+			available = {
+				NOT = {
+					CRI = { has_idea = CRI_anatoly_protestes }
+				}
 			hidden_trigger = { always = no }
 			}
 			

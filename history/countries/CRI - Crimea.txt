@@ -48,5 +48,6 @@ recruit_character = CRI_koti
 
 ###СОВЕТНИКИ####
 recruit_character = CRI_nikolay_topalov
+recruit_character = CRI_alekseev_aleksandr
 
 

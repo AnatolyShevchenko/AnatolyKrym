@@ -1,7 +1,9 @@
 characters={
 	CRI_shashkovi_sovet = {
+	
 		name = "Shashkovi_sovet" 
 		desc = "Shashkovi_sovet_DESC"
+		
 		portraits = {
 			civilian = {
 				large = GFX_shashkovi_sovet
@@ -19,8 +21,10 @@ characters={
 	}
 	
 	CRI_shakhmatni_sovet = {
+	
 		name = "Shakhmatni_sovet" 
 		desc = "Shakhmatni_sovet_DESC"
+		
 		portraits = {
 			civilian = {
 				large = GFX_shakhmatni_sovet
@@ -33,7 +37,7 @@ characters={
 			traits = {
             conservative_grandee
 			nationalist_symbol
-        }
+			}
 		}
 	}
 	
@@ -73,6 +77,32 @@ characters={
 			}
 			traits = {
 				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+	CRI_alekseev_aleksandr = {
+		name = CRI_alekseev_aleksandr
+		portraits = {
+			army = {
+				small = GFX_idea_alekseev_aleksandr
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = alekseev_aleksandr
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_organizational_2
 			}
 			cost = 100
 			ai_will_do = {
