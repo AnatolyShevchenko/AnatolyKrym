@@ -7,17 +7,17 @@ anatoly_protestes = {
 			
 			allowed = { tag = HAI }
 			
-			days_mission_timeout = 20
+			days_mission_timeout = 30
 			is_good = yes
 
 			timeout_effect = {
 				random_list = {
-					75 = {
+					50 = {
 					CRI = { country_event = crimea.1 }
 					activate_mission = anatoly_protestes_z
 					}
 					
-					25 = {
+					50 = {
 					activate_mission = anatoly_protestes_z
 					}
 				}
@@ -25,7 +25,6 @@ anatoly_protestes = {
 			
 			activation = {
 			CRI = { has_idea = CRI_anatoly_protestes }
-			always = yes
 			}
 
 			visible = {

@@ -20,3 +20,306 @@ country_event = {
 			}
 	}
 }
+
+country_event = {
+	id = crimea.2
+	title = crimea.2.t
+	desc = crimea.2.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	# The Civil War Starts
+	option = {
+		name = crimea.2.a
+
+		IF = {
+
+			hidden_effect = {
+			
+				set_capital = { state = 1017 }
+
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.5
+					navy_ratio = 0.1
+					capital = 137
+					states = all
+					keep_all_characters = yes
+					states_filter = {
+					    OR = {
+					    	state = 137
+					    }
+					    is_controlled_by = ROOT
+					}
+					PREV = {  # Original country
+						CRI_shashkovi_sovet = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway	
+						}
+				    }
+
+				    IF = {
+				    	limit = {
+				    		PREV.PREV = {
+				    			NOT = {
+				    				has_country_leader = {
+				    					ruling_only = yes
+				    					character = CRI_shashkovi_sovet
+				    				}
+				    			}
+				    			has_civil_war = yes
+				    		}
+				    	}
+				    	PREV.PREV = {
+				    		promote_character = {
+				    			character = CRI_shashkovi_sovet
+				    			ideology = stalinism
+				    		}
+				    	}
+				    }
+
+				    PREV.PREV = {
+
+			    		division_template = {
+			    		    name = "Anatoly's opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_OPL_01
+			    		    priority = 0
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		        militia = { x = 0 y = 3 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 137
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"1 Anatoly's opolchenya\" division_template = \"Anatoly's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"2 Anatoly's opolchenya\" division_template = \"Anatoly's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"3 Anatoly's opolchenya\" division_template = \"Anatoly's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"4 Anatoly's opolchenya\" division_template = \"Anatoly's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"5 Anatoly's opolchenya\" division_template = \"Anatoly's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+			    		}
+				    }
+				}
+			}
+		}
+		ELSE = { # We didn't placate Raeder
+
+			hidden_effect = {
+
+				set_capital = { state = 1017 }
+
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.5
+					navy_ratio = 0.8
+					capital = 137
+					states = all
+					keep_all_characters = yes
+					states_filter = {
+					    OR = {
+					    	state = 1017
+					    }
+					    is_controlled_by = ROOT
+					}
+					PREV = {  # Original country
+						CRI_shashkovi_sovet = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway	
+						}
+				    }
+
+				    IF = {
+				    	limit = {
+				    		PREV.PREV = {
+				    			NOT = {
+				    				has_country_leader = {
+				    					ruling_only = yes
+				    					character = CRI_shashkovi_sovet
+				    				}
+				    			}
+				    			has_civil_war = yes
+				    		}
+				    	}
+				    	PREV.PREV = {
+				    		promote_character = {
+				    			character = CRI_shashkovi_sovet
+				    			ideology = stalinism 
+				    		}
+				    	}
+				    }
+
+				    PREV.PREV = {
+
+			    		division_template = {
+			    		    name = "Shevchenos's opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_OPL_01
+			    		    priority = 0
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		        militia = { x = 0 y = 3 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 137
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV
+			    			}
+			    		}
+				    }
+				}
+			}
+		}
+
+		# Stuff that happens no matter what
+
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CRI
+					has_government = communism
+				}
+				set_stability = 0.12
+				set_war_support = 0.85
+			}
+		}
+
+	###	hidden_effect = { ###
+	###		news_event = { ###
+	###			id = wtt_news.1 ###
+	###			hours = 6 ###
+	###		} ###
+	###	}###
+
+		random_other_country = {
+			limit = {
+				original_tag = CRI
+				has_government = communism
+			}
+		}
+
+		CRI_shakhmatni_sovet = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = falangism
+					traits = {
+						conservative_grandee
+						nationalist_symbol
+					}
+				}
+				promote_leader = yes
+			}
+		}
+
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CRI
+					has_government = communism
+				}
+			}
+
+		}
+		
+		division_template = {
+			    		    name = "Shevchenos's opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_OPL_01
+			    		    priority = 0
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		        militia = { x = 0 y = 3 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 1017
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = CRI
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = CRI
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = CRI
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = CRI
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = CRI
+			    			}
+			    		}
+	}
+}

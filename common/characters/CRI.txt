@@ -54,5 +54,31 @@ characters={
         }
 		}
 	}
+	
+	CRI_nikolay_topalov = {
+		name = CRI_nikolay_topalov
+		portraits = {
+			army = {
+				small = GFX_idea_nikolay_topalov
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = nikolay_topalov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
 }
 	
