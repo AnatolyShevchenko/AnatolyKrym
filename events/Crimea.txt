@@ -11,12 +11,29 @@ country_event = {
 
 	option = {
 		name = crimea.1.a
-		add_stability = -0.02
-		add_political_power = -10
-		add_war_support = 0.01
+		add_stability = -0.15
+		add_political_power = -50
+		add_war_support = 0.05
 		add_popularity = {
 				ideology = fascism
-				popularity = 0.025
+				popularity = 0.15
+			}
+	}
+	
+	option = {
+		name = crimea.1.b
+		add_stability = -0.15
+		add_political_power = -100
+		add_manpower = -15000
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+				producer = CRI
+			}
+		army_experience = 5
+		add_popularity = {
+				ideology = communism
+				popularity = 0.05
 			}
 	}
 }
@@ -32,6 +49,8 @@ country_event = {
 	# The Civil War Starts
 	option = {
 		name = crimea.2.a
+		close_decision_tooltip = anatoly_protestes_z
+		
 
 		IF = {
 
@@ -198,27 +217,27 @@ country_event = {
 			    				}
 			    			}
 			    			create_unit = {
-			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = PREV
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = PREV
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = PREV
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = PREV
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = PREV
 			    			}
 			    		}
@@ -277,7 +296,7 @@ country_event = {
 			}
 
 		}
-		
+		hidden_effect = {
 		division_template = {
 			    		    name = "Shevchenos's opolchenya"
 			    		    is_locked = yes
@@ -297,29 +316,57 @@ country_event = {
 			    				}
 			    			}
 			    			create_unit = {
-			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"1 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = CRI
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"2 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = CRI
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"3 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = CRI
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"4 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = CRI
 			    			}
 							
 							create_unit = {
-			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    division = "name = \"5 Shevchenos's opolchenya\" division_template = \"Shevchenos's opolchenya\"start_experience_factor = 0.01 start_equipment_factor = 0.7"
 			    			    owner = CRI
 			    			}
 			    		}
+						
+				}
 	}
+}
+	country_event = {
+	id = crimea.3
+	title = crimea.3.t
+	desc = crimea.3.d
+	
+	picture = GFX_report_event_dutch_soldiers_indonesia
+	
+	trigger = {
+			NOT = { 
+			
+			original_tag = CRI
+			CRI = { has_government = communism }
+			CRI = allowed_civil_war
+			
+			}
+		}
+
+	option = {
+		name = crimea.3.a
+		add_political_power = 50
+		delete_unit_template_and_units = {
+		division_template = "Shevchenos's opolchenya"
+		}
+	}
+	
 }
