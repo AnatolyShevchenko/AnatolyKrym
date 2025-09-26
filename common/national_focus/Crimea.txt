@@ -20,6 +20,9 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.05
 					add_political_power = 25
+					country_event = { 
+					id = crimea.2
+					}
 					add_named_threat = {
 							threat = 2
 							name = CRI_restovration
