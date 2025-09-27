@@ -28,6 +28,11 @@ focus_tree = {
 							name = CRI_restovration
 						}
 				}
+				
+		available = {
+			has_government = communism
+			is_subject = no
+		}
 
 	}
 	focus = {

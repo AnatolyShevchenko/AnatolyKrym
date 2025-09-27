@@ -75,7 +75,7 @@ characters={
 			id = -1
 			traits = {
             dictator
-			fascist_militarist
+			nationalist_symbol
 			}
 		}
 	}
