@@ -14,7 +14,7 @@ characters={
 			expire = "1999.1.1.1"
 			id = -1
 			traits = {
-            defeatist
+            appeaser
 			skillful_diplomat
         }
 		}
@@ -132,7 +132,40 @@ characters={
 			}
 			cost = 100
 			ai_will_do = {
-				factor = 1.000
+				factor = 10.000
+			}
+		}
+	}
+	
+	CRI_magnus_karlsen = {
+		name = CRI_magnus_karlsen
+		portraits = {
+			army = {
+				small = GFX_idea_magnus_karlsen
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = magnus_karlsen
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+				
+				has_completed_focus = CRI_InviteMagnusCarlsen
+				has_government = fascism
+				
+			}
+			traits = {
+				god_of_chess
+			}
+			
+			visible = {
+			has_completed_focus = CRI_InviteMagnusCarlsen
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 9.000
 			}
 		}
 	}
