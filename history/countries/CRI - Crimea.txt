@@ -45,6 +45,7 @@ add_ideas = {
 recruit_character = CRI_shashkovi_sovet
 recruit_character = CRI_shakhmatni_sovet
 recruit_character = CRI_koti
+recruit_character = CRI_anatoly_shevchenko
 
 ###СОВЕТНИКИ####
 recruit_character = CRI_nikolay_topalov

@@ -5225,3 +5225,8 @@
  BLC: "Белуджистан"
  BLC_DEF: "Белуджистан"
  BLC_ADJ: "Белуджск"
+ 
+ CRI_civil_war: "Шахматная повстанческая хунта"
+ CRI_civil_war_DEF: "Шахматная повстанческая хунта"
+ CRI_anatoly_fascism: "Анатольевский Рейх"
+ CRI_anatoly_fascism_DEF: "Анатольевский Рейх"

@@ -98,6 +98,9 @@ country_event = {
 				    		}
 				    	}
 				    }
+					
+					
+					
 
 				    PREV.PREV = {
 
@@ -145,6 +148,8 @@ country_event = {
 			    			}
 							
 			    		}
+						
+						set_cosmetic_tag = CRI_civil_war_com
 				    }
 				}
 			}
@@ -249,13 +254,16 @@ country_event = {
 		# Stuff that happens no matter what
 
 		hidden_effect = {
+		
+			set_cosmetic_tag = CRI_civil_war
+				
 			random_other_country = {
 				limit = {
 					original_tag = CRI
 					has_government = communism
 				}
 				set_stability = 0.12
-				set_war_support = 0.85
+				set_war_support = 0.6
 			}
 		}
 

@@ -18,7 +18,7 @@ focus_tree = {
 		x = 24
 		y = 0
 			completion_reward = {
-					add_war_support = 0.05
+					add_war_support = 0.025
 					add_political_power = 25
 					country_event = { 
 					id = crimea.2
@@ -325,7 +325,7 @@ focus_tree = {
 		x = 21
 		y = 1
 			completion_reward = {
-					add_war_support = 0.15
+					add_war_support = 0.075
 					add_command_power = 5
 					army_experience = 10
 				}
@@ -341,7 +341,7 @@ focus_tree = {
 		x = 20
 		y = 2
 			completion_reward = {
-					add_war_support = 0.1
+					add_war_support = 0.05
 					add_command_power = 25
 					army_experience = 40
 					add_extra_state_shared_building_slots = 2
@@ -363,9 +363,9 @@ focus_tree = {
 		x = 22
 		y = 3
 			completion_reward = {
-					add_war_support = 0.05
+					add_war_support = 0.025
 					army_experience = 15
-					add_stability = 0.1
+					add_stability = 0.05
 				}
 
 	}
@@ -379,8 +379,8 @@ focus_tree = {
 		x = 27
 		y = 1
 			completion_reward = {
-					add_stability = 0.1
-					add_political_power = 100
+					add_stability = 0.05
+					add_political_power = 50
 				}
 
 	}
@@ -394,7 +394,7 @@ focus_tree = {
 		x = 26
 		y = 3
 			completion_reward = {
-					add_stability = 0.05
+					add_stability = 0.025
 					add_political_power = 25
 				}
 
@@ -409,9 +409,9 @@ focus_tree = {
 		x = 28
 		y = 2
 			completion_reward = {
-					add_stability = 0.1
-					add_political_power = 50
-					add_war_support = 0.1
+					add_stability = 0.05
+					add_political_power = 25
+					add_war_support = 0.05
 					army_experience = 10
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -438,6 +438,22 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
+		
+		available = {
+			has_government = fascism
+			has_civil_war = no
+		}
+		
+		completion_reward = {
+		
+			hidden_effect = {
+		
+			set_cosmetic_tag = CRI_anatoly_fascism
+			
+			}
+
+			promote_character = CRI_anatoly_shevchenko
+		}
 
 	}
 	focus = {

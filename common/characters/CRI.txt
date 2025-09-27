@@ -59,6 +59,27 @@ characters={
 		}
 	}
 	
+	CRI_anatoly_shevchenko = {
+	
+		name = "Anatoly_Shevchenko" 
+		desc = "Anatoly_Shevchenko_DESC"
+		
+		portraits = {
+			civilian = {
+				large = GFX_anatoly_shevchenko
+			}
+		}
+		country_leader = {
+			ideology = nazism
+			expire = "1965.1.1.1"
+			id = -1
+			traits = {
+            dictator
+			fascist_militarist
+			}
+		}
+	}
+	
 	CRI_nikolay_topalov = {
 		name = CRI_nikolay_topalov
 		portraits = {
