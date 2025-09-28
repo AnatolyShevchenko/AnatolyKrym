@@ -20,19 +20,18 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.025
 					add_political_power = 25
-					country_event = { 
-					id = crimea.2
-					}
+					country_event = {
+							id = crimea.2
+						}
 					add_named_threat = {
 							threat = 2
 							name = CRI_restovration
 						}
 				}
-				
-		available = {
-			has_government = communism
-			is_subject = no
-		}
+			available = {
+					has_government = communism
+					is_subject = no
+				}
 
 	}
 	focus = {
@@ -443,22 +442,16 @@ focus_tree = {
 		}
 		x = 24
 		y = 5
-		
-		available = {
-			has_government = fascism
-			has_civil_war = no
-		}
-		
-		completion_reward = {
-		
-			hidden_effect = {
-		
-			set_cosmetic_tag = CRI_anatoly_fascism
-			
-			}
-
-			promote_character = CRI_anatoly_shevchenko
-		}
+			available = {
+					has_government = fascism
+					has_civil_war = no
+				}
+			completion_reward = {
+					hidden_effect = {
+							set_cosmetic_tag = CRI_anatoly_fascism
+						}
+					promote_character = CRI_anatoly_shevchenko
+				}
 
 	}
 	focus = {
@@ -488,7 +481,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_KillShashki
-		icon = GFX_goal_unknown
+		icon = GFX_CRI_focus_killshashki
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_ShashkoviDocumentDestroy
@@ -502,7 +495,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_AntiShashkoviyPact
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ARG_anti_corruption_policies
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KillShashki
@@ -513,7 +506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_ShashkoviyZapret
-		icon = GFX_goal_unknown
+		icon = GFX_CRI_focus_shashkoviyzapret
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_KillShashki
@@ -524,7 +517,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_AntiShashkoviySovet
-		icon = GFX_goal_unknown
+		icon = GFX_CRI_focus_antishashkoviysovet
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_ShashkoviyZapret
@@ -761,14 +754,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CRI_Upgradechessboard working conditions
+		id = CRI_Upgradechessboard
 		icon = GFX_goal_unknown
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_ChessMonopoly
 		}
+		prerequisite = {
+			focus = CRI_productionofchesspieces
+		}
 		x = 17
 		y = 9
+			working = conditions
 
 	}
 	focus = {
@@ -777,9 +774,6 @@ focus_tree = {
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_UpgradeChessIndustry
-		}
-		prerequisite = {
-			focus = CRI_Upgradechessboard working conditions
 		}
 		x = 20
 		y = 10
@@ -808,14 +802,18 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CRI_Upgradechessboard supply nodes
+		id = CRI_Upgradechessboard
 		icon = GFX_goal_unknown
 		cost = 10,00
+		prerequisite = {
+			focus = CRI_ChessMonopoly
+		}
 		prerequisite = {
 			focus = CRI_productionofchesspieces
 		}
 		x = 8
 		y = 9
+			supply = nodes
 
 	}
 	focus = {
