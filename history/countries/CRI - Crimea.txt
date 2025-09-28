@@ -50,5 +50,6 @@ recruit_character = CRI_anatoly_shevchenko
 ###СОВЕТНИКИ####
 recruit_character = CRI_nikolay_topalov
 recruit_character = CRI_alekseev_aleksandr
+recruit_character = CRI_magnus_karlsen
 
 

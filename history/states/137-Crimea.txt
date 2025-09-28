@@ -18,24 +18,24 @@ state = {
 		}
 
 		victory_points = {
-			6704 1 # Yalta
+			6704 3 # Yalta
 		}
 
 		victory_points = {
-			705 3 # Simferopol
+			705 5 # Simferopol
 		}
 		
 		victory_points = {
-			13380 1 # Alushta
+			13380 3 # Alushta
 		}
 		
 		
 		victory_points = {
-			13384 1 # Evpatoria
+			13384 3 # Evpatoria
 		}
 		
 		victory_points = {
-			13382 1 # Djankoi
+			13382 3 # Djankoi
 		}
 
 		buildings = {
