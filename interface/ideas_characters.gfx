@@ -1,6 +1,26 @@
 spriteTypes = {
 
 	spriteType = {
+		name = "GFX_idea_nikolay_topalov3"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov2"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov_max"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov_max.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov1"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov1.dds"
+	}
+	
+	spriteType = {
 		name = "GFX_idea_magnus_karlsen"
 		texturefile = "gfx/interface/ideas/idea_magnus_karlsen.dds"
 	}

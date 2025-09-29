@@ -385,3 +385,296 @@ country_event = {
 	}
 	
 }
+
+
+####################################### ПОХУДЕНИЕ #####################################
+
+
+	country_event = {
+	id = crimea.4
+	title = crimea.4.t
+	desc = crimea.4.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_pohudenie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.4.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov1
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_defensive_2
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_defensive_1
+		}	
+	}
+}
+
+country_event = {
+	id = crimea.5
+	title = crimea.5.t
+	desc = crimea.5.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_poedanie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.5.a
+		add_political_power = -25
+	}
+}
+
+	country_event = {
+	id = crimea.6
+	title = crimea.6.t
+	desc = crimea.6.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_poedanie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.6.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov_max
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_defensive_2
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_defensive_3
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.7
+	title = crimea.4.t
+	desc = crimea.4.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_pohudenie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.4.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_defensive_3
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_defensive_2
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.8
+	title = crimea.6.t
+	desc = crimea.6.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_poedanie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.6.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_defensive_1
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_defensive_2
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.9
+	title = crimea.4.t
+	desc = crimea.4.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_pohudenie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.4.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov2
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_defensive_1
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_offensive_1
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.10
+	title = crimea.4.t
+	desc = crimea.4.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_pohudenie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.4.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov3
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_offensive_1
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_offensive_2
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.11
+	title = crimea.6.t
+	desc = crimea.6.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_poedanie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.6.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov1
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_offensive_1
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_defensive_1
+		}	
+	}
+}
+
+	country_event = {
+	id = crimea.12
+	title = crimea.6.t
+	desc = crimea.6.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_poedanie
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.6.a
+		set_portraits = {
+		character = CRI_nikolay_topalov
+		army = {
+				small = GFX_idea_nikolay_topalov2
+			}
+		}
+		hidden_effect = {
+			remove_trait = {
+			character = CRI_nikolay_topalov
+			slot = army_chief
+			trait = army_chief_offensive_2
+			}
+		}
+		add_trait = {
+		character = CRI_nikolay_topalov
+		slot = army_chief
+		trait = army_chief_offensive_1
+		}	
+	}
+}

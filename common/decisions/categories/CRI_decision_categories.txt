@@ -5,3 +5,12 @@ anatoly_protestes = {
 	
 	allowed = { tag = HAI }
 }
+
+topalov_gym = {
+	icon = GFX_decision_category_topalov_gym
+	priority = 0
+	picture = GFX_decision_topalov
+	
+	
+	allowed = { tag = CRI }
+}

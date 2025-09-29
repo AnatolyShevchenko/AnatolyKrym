@@ -29,3 +29,428 @@ anatoly_protestes = {
 			}
  	}
 }
+
+topalov_gym = {
+
+########################################################### МЕХАНИКА ПОХУДЕНИЯ ##################################################
+
+########################################################### ДЕФОЛТ ПУЗО ##################################################
+
+	topalov_pohudenie = {
+		icon = GFX_decision_generic_motorized
+			available = {
+				has_country_flag = gym_is_builded
+				NOT = {
+				has_country_flag = topalov_razbuhaet
+				}
+				has_full_control_of_state = 137
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				always = yes
+				NOT = {
+				has_country_flag = fat_3
+				has_country_flag = fat_2
+				has_country_flag = fat_max
+				has_country_flag = fat_1
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_hudeet
+			}
+			
+			remove_effect = {
+			random_list = {
+				25 = {
+					CRI = { country_event = crimea.4 }
+					set_country_flag = fat_1
+				}
+				75 = {
+					CRI = { country_event = crimea.5 }
+				}
+			}
+			clr_country_flag = topalov_hudeet
+			}
+			
+			days_remove = 30
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+	
+	topalov_poedanie = {
+		icon = GFX_decision_RAJ_famine
+			available = {
+			NOT = {
+				has_country_flag = topalov_hudeet
+				}
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				always = yes
+				NOT = {
+				has_country_flag = fat_3
+				has_country_flag = fat_2
+				has_country_flag = fat_max
+				has_country_flag = fat_1
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_razbuhaet
+			}
+			remove_effect = {
+				CRI = { country_event = crimea.6 }
+				clr_country_flag = topalov_razbuhaet
+				set_country_flag = fat_max
+			}
+			random_list = {
+			
+			}
+			
+			days_remove = 45
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+
+########################################################### МАКСИМАЛЬНОЕ ПУЗО ##################################################
+
+	topalov_pohudenie_max = {
+		icon = GFX_decision_generic_motorized
+			available = {
+				has_country_flag = gym_is_builded
+				has_full_control_of_state = 137
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				always = yes
+				has_country_flag = fat_max
+			}
+			
+			complete_effect = {
+				
+			}
+			remove_effect = {
+			random_list = {
+				20 = {
+					CRI = { country_event = crimea.7 }
+					clr_country_flag = fat_max
+				}
+				80 = {
+					CRI = { country_event = crimea.5 }
+				}
+			}
+			}
+			
+			days_remove = 30
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+	
+########################################################### ПОХУДЕНИЕ 1 ##################################################
+
+		topalov_pohudenie_1 = {
+		icon = GFX_decision_generic_motorized
+			available = {
+				has_country_flag = gym_is_builded
+				NOT = {
+				has_country_flag = topalov_razbuhaet
+				}
+				has_full_control_of_state = 137
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_country_flag = fat_1
+				always = yes
+				NOT = {
+				has_country_flag = fat_max
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_hudeet
+			}
+			
+			remove_effect = {
+			random_list = {
+				30 = {
+					CRI = { country_event = crimea.9 }
+					set_country_flag = fat_2
+					clr_country_flag = fat_1
+				}
+				70 = {
+					CRI = { country_event = crimea.5 }
+				}
+			}
+			clr_country_flag = topalov_hudeet
+			}
+			
+			days_remove = 30
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+	
+	topalov_poedanie_1 = {
+		icon = GFX_decision_RAJ_famine
+			available = {
+			NOT = {
+				has_country_flag = topalov_hudeet
+				}
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_country_flag = fat_1
+				always = yes
+				NOT = {
+				has_country_flag = fat_max
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_razbuhaet
+			}
+			remove_effect = {
+				CRI = { country_event = crimea.8 }
+				clr_country_flag = topalov_razbuhaet
+				clr_country_flag = fat_1
+			}
+			random_list = {
+			
+			}
+			
+			days_remove = 45
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+
+########################################################### ПОХУДЕНИЕ 2 ##################################################
+
+		topalov_pohudenie_2 = {
+		icon = GFX_decision_generic_motorized
+			available = {
+				has_country_flag = gym_is_builded
+				NOT = {
+				has_country_flag = topalov_razbuhaet
+				}
+				has_full_control_of_state = 137
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_country_flag = fat_2
+				always = yes
+				NOT = {
+				has_country_flag = fat_3
+				has_country_flag = fat_1
+				has_country_flag = fat_max
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_hudeet
+			}
+			
+			remove_effect = {
+			random_list = {
+				35 = {
+					CRI = { country_event = crimea.10 }
+					set_country_flag = fat_3
+					clr_country_flag = fat_2
+				}
+				65 = {
+					CRI = { country_event = crimea.5 }
+				}
+			}
+			clr_country_flag = topalov_hudeet
+			}
+			
+			days_remove = 30
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+	
+	topalov_poedanie_2 = {
+		icon = GFX_decision_RAJ_famine
+			available = {
+			NOT = {
+				has_country_flag = topalov_hudeet
+				}
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_country_flag = fat_2
+				always = yes
+				NOT = {
+				has_country_flag = fat_max
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_razbuhaet
+			}
+			remove_effect = {
+				CRI = { country_event = crimea.11 }
+				clr_country_flag = topalov_razbuhaet
+				clr_country_flag = fat_2
+				set_country_flag = fat_1
+			}
+			random_list = {
+			
+			}
+			
+			days_remove = 45
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+	
+########################################################### ПОХУДЕНИЕ 3 ##################################################
+
+	topalov_poedanie_3 = {
+		icon = GFX_decision_RAJ_famine
+			available = {
+			NOT = {
+				has_country_flag = topalov_hudeet
+				}
+			}
+			cost = 25
+			
+			allowed = { tag = CRI }
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_country_flag = fat_3
+				always = yes
+				NOT = {
+				has_country_flag = fat_max
+				}
+			}
+			
+			complete_effect = {
+				set_country_flag = topalov_razbuhaet
+			}
+			remove_effect = {
+				CRI = { country_event = crimea.12 }
+				clr_country_flag = topalov_razbuhaet
+				clr_country_flag = fat_3
+				set_country_flag = fat_2
+			}
+			random_list = {
+			
+			}
+			
+			days_remove = 45
+			
+			modifier = {
+			experience_gain_army = -0.15
+			political_power_gain = -0.25
+			}
+ 	}
+
+########################################################### МЕХАНИКА ПОХУДЕНИЯ ##################################################
+
+	topalov_build_gym = {
+		icon = GFX_decision_generic_construction
+			available = {
+				has_full_control_of_state = 137
+			}
+			cost = 75
+			
+			allowed = { tag = CRI }
+			
+			fire_only_once = yes
+			
+			activation = {
+			}
+			
+			visible = {
+				always = yes
+				NOT = {
+				has_country_flag = gym_is_builded
+				}
+			}
+			
+			remove_effect = {
+				set_country_flag = gym_is_builded
+			}
+			complete_effect = {
+			}
+			
+			days_remove = 120
+			
+			modifier = {
+			political_power_gain = -0.30
+			}
+ 	}
+}
