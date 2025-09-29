@@ -8845,5 +8845,20 @@ spriteTypes = {
 		name = GFX_anatoly_shevchenko
 		texturefile = "gfx/leaders/CRI/CRI_anatoly_shevchenko.dds"
 	}
+	
+	spriteType = {
+		name = GFX_alekseev_aleksandr
+		texturefile = "gfx/leaders/CRI/CRI_alekseev_aleksandr.dds"
+	}
+	
+	spriteType = {
+		name = GFX_anton_boykov
+		texturefile = "gfx/leaders/CRI/CRI_anton_boykov.dds"
+	}
+	
+	spriteType = {
+		name = GFX_sharik
+		texturefile = "gfx/leaders/CRI/CRI_sharik.dds"
+	}
 
 }

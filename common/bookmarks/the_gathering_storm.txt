@@ -153,7 +153,9 @@ bookmarks = {
 				CRI_anatoly_protestes
 			}	
 			focuses = {
-				
+				CRI_restovration
+				CRI_InviteAnatoly
+				CRI_shashki
 			}			
 		}
 		"SOV"={

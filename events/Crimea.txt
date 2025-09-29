@@ -77,6 +77,15 @@ country_event = {
 						    set_nationality = PREV.PREV
 						    # Transfers to breakaway	
 						}
+						CRI_anton_boykov = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_sharik = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
 				    }
 
 				    IF = {
@@ -179,6 +188,17 @@ country_event = {
 						    set_nationality = PREV.PREV
 						    # Transfers to breakaway	
 						}
+						
+						CRI_anton_boykov = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_sharik = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
 				    }
 
 				    IF = {

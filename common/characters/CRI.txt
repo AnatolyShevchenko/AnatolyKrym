@@ -68,6 +68,9 @@ characters={
 			civilian = {
 				large = GFX_anatoly_shevchenko
 			}
+			army = { 
+				large = GFX_anatoly_shevchenko
+			}
 		}
 		country_leader = {
 			ideology = nazism
@@ -76,6 +79,23 @@ characters={
 			traits = {
             dictator
 			nationalist_symbol
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1 
+			visible = {
+				has_government = fascism
+				NOT = {
+					has_country_leader = {
+						character = CRI_anatoly_shevchenko
+					}
+				}
 			}
 		}
 	}
@@ -111,6 +131,7 @@ characters={
 		portraits = {
 			army = {
 				small = GFX_idea_alekseev_aleksandr
+				large = GFX_alekseev_aleksandr
 			}
 		}
 		advisor = {
@@ -133,6 +154,18 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 10.000
+			}
+		}
+		
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = -1 
+				visible = {
+				has_government = fascism
 			}
 		}
 	}
@@ -167,6 +200,43 @@ characters={
 			ai_will_do = {
 				factor = 9.000
 			}
+		}
+	}
+	
+	CRI_anton_boykov = {
+		name = CRI_anton_boykov
+		portraits = {
+			army = {
+				large = GFX_anton_boykov
+			}
+		}
+		
+		field_marshal = {
+			traits = { spotter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1 
+		}
+	}
+	
+	CRI_sharik = {
+		name = CRI_sharik
+		portraits = {
+			army = {
+				large = GFX_sharik
+			}
+		}
+		
+		corps_commander = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1 
 		}
 	}
 }
