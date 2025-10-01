@@ -86,6 +86,17 @@ country_event = {
 						    set_nationality = PREV.PREV
 						    # Transfers to breakaway
 						}
+						
+						CRI_vlad_kostin = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_shumizki_timur = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
 				    }
 
 				    IF = {
@@ -195,6 +206,16 @@ country_event = {
 						}
 						
 						CRI_sharik = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_vlad_kostin = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_shumizki_timur = { # Character
 						    set_nationality = PREV.PREV
 						    # Transfers to breakaway
 						}

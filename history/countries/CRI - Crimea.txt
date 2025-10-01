@@ -51,10 +51,14 @@ recruit_character = CRI_anatoly_shevchenko
 recruit_character = CRI_nikolay_topalov
 recruit_character = CRI_alekseev_aleksandr
 recruit_character = CRI_magnus_karlsen
+recruit_character = CRI_igor_plokhotnichenko
+recruit_character = CRI_egor_prozenko
 
 ###ГЕНЕРАЛЫ И ФЕЛЬДМАРШЕЛЫ####
 
 recruit_character = CRI_anton_boykov
 recruit_character = CRI_sharik
+recruit_character = CRI_vlad_kostin
+recruit_character = CRI_shumizki_timur
 
 

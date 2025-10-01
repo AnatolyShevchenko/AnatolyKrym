@@ -8860,5 +8860,25 @@ spriteTypes = {
 		name = GFX_sharik
 		texturefile = "gfx/leaders/CRI/CRI_sharik.dds"
 	}
+	
+	spriteType = {
+		name = GFX_shumizki_timur
+		texturefile = "gfx/leaders/CRI/CRI_shumizki_timur.dds"
+	}
+	
+	spriteType = {
+		name = GFX_vlad_kostin
+		texturefile = "gfx/leaders/CRI/CRI_vlad_kostin.dds"
+	}
+	
+	spriteType = {
+		name = GFX_igor_plokhotnichenko
+		texturefile = "gfx/leaders/CRI/CRI_igor_plokhotnichenko.dds"
+	}
+	
+	spriteType = {
+		name = GFX_egor_prozenko
+		texturefile = "gfx/leaders/CRI/CRI_egor_prozenko.dds"
+	}
 
 }

@@ -70,5 +70,23 @@ ideas = {
 				war_support_factor = 0.05
 			}
 		}
+			CRI_civil_war_anatoly = {
+			name = CRI_civil_war_anatoly
+			picture = SPA_maquis
+
+			allowed = {
+				original_tag = CRI
+				NOT = { has_government = communism }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				surrender_limit = 0.5
+				max_surrender_limit_offset = 0.10
+			}
+		}
 	}
 }
