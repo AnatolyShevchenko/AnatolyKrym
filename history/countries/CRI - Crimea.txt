@@ -17,7 +17,6 @@ set_technology = {
 	motorised_infantry = 1
 	paratroopers = 1
 	gw_artillery = 1
-	mass_assault = 1
 	fleet_in_being = 1
 }
 
@@ -53,6 +52,9 @@ recruit_character = CRI_alekseev_aleksandr
 recruit_character = CRI_magnus_karlsen
 recruit_character = CRI_igor_plokhotnichenko
 recruit_character = CRI_egor_prozenko
+
+recruit_character = CRI_maksim_vinogradov
+recruit_character = CRI_egor_dyatlov
 
 ###ГЕНЕРАЛЫ И ФЕЛЬДМАРШЕЛЫ####
 

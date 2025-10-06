@@ -43,6 +43,23 @@
 
 leader_traits = {
 
+	puzostroitel = {
+		random = no
+		production_speed_buildings_factor = 0.15
+		political_power_factor = 0.1
+		research_speed_factor = 0.05
+		stability_factor = 0.05
+		trade_laws_cost_factor = -0.05
+		mobilization_laws_cost_factor = -0.05
+		economy_cost_factor = -0.05
+		army_attack_factor = -0.1
+	}
+	
+	petushini_magnat = {
+		random = no
+		political_power_factor = -0.1
+	}
+	
 	god_of_chess = {
 		random = no
 		stability_factor = 0.05

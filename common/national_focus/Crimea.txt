@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = CRI_restovration
 		icon = GFX_focus_CRI_restovration
-		cost = 10,00
+		cost = 15,0
 		mutually_exclusive = {
 			focus = CRI_shashki
 		}
@@ -338,7 +338,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UkraineCrimea
 		icon = GFX_focus_CRI_Crimea
-		cost = 2,00
+		cost = 3,0
 		prerequisite = {
 			focus = CRI_UkrainePowers
 		}
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteFarmers
 		icon = GFX_focus_generic_farmland
-		cost = 2,00
+		cost = 3,57
 		prerequisite = {
 			focus = CRI_UkrainePowers
 		}
@@ -402,7 +402,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteMagnusCarlsen
 		icon = GFX_focus_invite_MagnusCarlsen
-		cost = 2,00
+		cost = 3,57
 		prerequisite = {
 			focus = CRI_fondShahmat
 		}
@@ -419,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UnPrisonPawns
 		icon = GFX_focus_generic_subjugation
-		cost = 2,00
+		cost = 3,57
 		prerequisite = {
 			focus = CRI_fondShahmat
 		}
@@ -501,6 +501,10 @@ focus_tree = {
 		}
 		x = 29
 		y = 6
+		
+		completion_reward = {
+			remove_ideas = { CRI_anti_chess_politic }
+		}
 
 	}
 	focus = {
@@ -515,28 +519,43 @@ focus_tree = {
 		}
 		x = 26
 		y = 7
+		
+		completion_reward = {
+			add_ideas = { CRI_shashki_chistki }
+		}
 
 	}
 	focus = {
 		id = CRI_AntiShashkoviyPact
 		icon = GFX_focus_ARG_anti_corruption_policies
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
 		x = 25
 		y = 8
-
+		completion_reward = {
+			add_ideas = { CRI_anti_shashki_politic }
+		}
 	}
 	focus = {
 		id = CRI_ShashkoviyZapret
 		icon = GFX_CRI_focus_shashkoviyzapret
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
 		x = 27
 		y = 8
+		
+		completion_reward = {
+			add_popularity = {
+			ideology = communism
+			popularity = -0.25
+			}
+			add_political_power = 50
+			add_stability = -0.05
+		}
 
 	}
 	focus = {

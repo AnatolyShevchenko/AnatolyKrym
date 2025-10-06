@@ -320,5 +320,79 @@ characters={
 			}
 		}
 	}
+	
+	CRI_maksim_vinogradov = {
+		name = CRI_maksim_vinogradov
+		portraits = {
+			army = {
+				small = GFX_idea_maksim_vinogradov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = maksim_vinogradov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+				
+				
+			}
+			traits = {
+				petushini_magnat
+			}
+			
+			visible = {
+			
+			}
+			cost = 350
+			ai_will_do = {
+				factor = 9.000
+			}
+			
+			visible = {
+					has_country_leader = {
+						character = CRI_nikolay_topalov
+				}
+			}
+		}
+	}
+	
+	CRI_egor_dyatlov = {
+		name = CRI_egor_dyatlov
+		portraits = {
+			army = {
+				small = GFX_idea_egor_dyatlov
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = egor_dyatlov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+				
+				
+			}
+			traits = {
+				puzostroitel
+			}
+			
+			visible = {
+			
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 9.000
+			}
+			
+			visible = {
+					has_country_leader = {
+						character = CRI_nikolay_topalov
+				}
+			}
+		}
+	}
 }
 	

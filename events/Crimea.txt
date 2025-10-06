@@ -50,7 +50,9 @@ country_event = {
 	option = {
 		name = crimea.2.a
 		close_decision_tooltip = anatoly_protestes_z
-		
+		hidden_effect = {
+		add_ideas = CRI_civil_war_anatoly
+			}
 
 		IF = {
 
@@ -168,7 +170,9 @@ country_event = {
 			    			}
 							
 			    		}
-						
+						hidden_effect = {
+							add_ideas = CRI_civil_war_anatoly
+						}
 						set_cosmetic_tag = CRI_civil_war_com
 				    }
 				}
@@ -293,6 +297,10 @@ country_event = {
 		}
 
 		# Stuff that happens no matter what
+		
+		hidden_effect = {
+		add_ideas = CRI_civil_war_anatoly
+			}
 
 		hidden_effect = {
 		
@@ -423,6 +431,10 @@ country_event = {
 		delete_unit_template_and_units = {
 		division_template = "Shevchenos's opolchenya"
 		}
+		
+		hidden_effect = {
+		remove_ideas = CRI_civil_war_anatoly
+			}
 	}
 	
 }

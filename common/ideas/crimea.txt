@@ -9,11 +9,7 @@ ideas = {
 			}
 			
 			allowed_civil_war = {
-				
-			}
-			
-			available = {
-				
+				always = yes
 			}
 
 			modifier = {
@@ -27,6 +23,29 @@ ideas = {
 				war_support_factor = -0.10
 				fascism_drift = 0.01
 				political_power_factor = -0.1
+			}
+		}
+		
+		CRI_anti_shashki_politic = {
+			name = CRI_anti_shashki_politic
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+				
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.10
+				industrial_capacity_factory = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				communism_drift = -0.01
+				political_power_factor = -0.15
 			}
 		}
 		
@@ -72,7 +91,7 @@ ideas = {
 		}
 			CRI_civil_war_anatoly = {
 			name = CRI_civil_war_anatoly
-			picture = SPA_maquis
+			picture = generic_morale_bonus
 
 			allowed = {
 				original_tag = CRI
@@ -84,8 +103,22 @@ ideas = {
 			}
 
 			modifier = {
-				surrender_limit = 0.5
-				max_surrender_limit_offset = 0.10
+				surrender_limit = 3
+				max_surrender_limit_offset = 0.15
+			}
+		}
+		
+		CRI_shashki_chistki = {
+			name = CRI_shashki_chistki
+			picture = generic_volunteer_expedition_bonus
+
+			allowed = {
+				original_tag = CRI
+				has_government = fascism
+			}
+
+			allowed_civil_war = {
+				always = yes
 			}
 		}
 	}
