@@ -454,3 +454,63 @@ topalov_gym = {
 			}
  	}
 }
+
+
+
+
+crimea_operation = {
+	communism_crimea = {
+		icon = generic_army_support
+			available = {
+				CRI = {
+					has_government = fascism
+					has_civil_war = no
+				}
+			}
+			cost = 10
+			
+			allowed = { 
+				tag = SOV
+			}
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_government = communism
+				NOT = {
+					CRI = { has_idea = CRI_sovet_vlianie }
+				}
+				CRI = {
+						has_government = fascism
+						has_civil_war = no
+					}
+			}
+			
+			complete_effect = {
+			
+			}
+			remove_effect = {
+				CRI = { 
+					add_timed_idea = {
+						idea = CRI_sovet_vlianie
+						days = 365
+					}
+				hidden_effect = {
+					country_event = crimea.13
+					}
+				}
+			}
+			random_list = {
+			
+			}
+			
+			days_remove = 30
+			
+			ai_will_do = { factor = 100 }
+			
+			modifier = {
+			}
+ 	}
+}

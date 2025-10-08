@@ -14,3 +14,11 @@ topalov_gym = {
 	
 	allowed = { tag = CRI }
 }
+
+crimea_operation = {
+	icon = generic_construction
+	priority = 1
+	visible_when_empty = no
+	allowed = { 
+		tag = SOV
+}
