@@ -103,6 +103,9 @@ characters={
 	CRI_nikolay_topalov = {
 		name = CRI_nikolay_topalov
 		portraits = {
+			civilian = {
+				large = GFX_nikolay_topalov
+			}
 			army = {
 				small = GFX_idea_nikolay_topalov
 			}
@@ -122,6 +125,23 @@ characters={
 			cost = 100
 			ai_will_do = {
 				factor = 1.000
+			}
+			
+			visible = {
+				NOT = {
+					has_country_leader = {
+						character = CRI_nikolay_topalov
+					}
+				}
+			}
+		}
+		
+		country_leader = {
+			ideology = leninism
+			expire = "1950.1.1.1"
+			id = -1
+			traits = {
+            burger_ruler
 			}
 		}
 	}

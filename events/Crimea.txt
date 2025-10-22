@@ -356,6 +356,13 @@ country_event = {
 		
 		hidden_effect = {
 		add_ideas = CRI_civil_war_anatoly
+		set_crimea_party_name = {
+			set_party_name = {
+			ideology = communism
+			long = "CRI_communism_party_topalov_long"
+			short = "CRI_communism_party_topalov"
+					}
+				}
 			}
 
 		hidden_effect = {
@@ -545,6 +552,9 @@ country_event = {
 		army = {
 				small = GFX_idea_nikolay_topalov1
 			}
+		civilian = {
+				large = GFX_nikolay_topalov1
+			}
 		}
 		hidden_effect = {
 			remove_trait = {
@@ -596,6 +606,10 @@ country_event = {
 		army = {
 				small = GFX_idea_nikolay_topalov_max
 			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov_max
+			}
 		}
 		hidden_effect = {
 			remove_trait = {
@@ -629,6 +643,10 @@ country_event = {
 		character = CRI_nikolay_topalov
 		army = {
 				small = GFX_idea_nikolay_topalov
+			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov
 			}
 		}
 		hidden_effect = {
@@ -664,6 +682,9 @@ country_event = {
 		army = {
 				small = GFX_idea_nikolay_topalov
 			}
+		civilian = {
+				large = GFX_nikolay_topalov
+			}
 		}
 		hidden_effect = {
 			remove_trait = {
@@ -697,6 +718,10 @@ country_event = {
 		character = CRI_nikolay_topalov
 		army = {
 				small = GFX_idea_nikolay_topalov2
+			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov2
 			}
 		}
 		hidden_effect = {
@@ -732,6 +757,10 @@ country_event = {
 		army = {
 				small = GFX_idea_nikolay_topalov3
 			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov3
+			}
 		}
 		hidden_effect = {
 			remove_trait = {
@@ -766,6 +795,10 @@ country_event = {
 		army = {
 				small = GFX_idea_nikolay_topalov1
 			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov1
+			}
 		}
 		hidden_effect = {
 			remove_trait = {
@@ -799,6 +832,10 @@ country_event = {
 		character = CRI_nikolay_topalov
 		army = {
 				small = GFX_idea_nikolay_topalov2
+			}
+			
+		civilian = {
+				large = GFX_nikolay_topalov2
 			}
 		}
 		hidden_effect = {
@@ -845,5 +882,99 @@ country_event = {
 
 	option = {
 		name = crimea.13.a
+	}
+}
+
+country_event = {
+	id = crimea.14
+	title = crimea.14.t
+	desc = crimea.14.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_stalin_01
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.14.a
+	}
+}
+
+country_event = {
+	id = crimea.15
+	title = crimea.15.t
+	desc = crimea.15.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_stalin_02
+	
+	trigger = {
+		}
+
+	option = {
+		name = crimea.15.a
+		SOV = { 
+			annex_country = {
+			target = CRI
+			transfer_troops = yes
+				} 		
+			}
+		hidden_effect = {
+			137 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+			
+			1017 = {
+				transfer_state_to = SOV
+				add_core_of = SOV
+			}
+		}
+			
+	}
+	
+	option = {
+		name = crimea.15.b
+			SOV = {
+				puppet = CRI
+			}
+			
+			hidden_effect = {
+				add_popularity = {
+					ideology = communism
+					popularity = 0.35
+					}
+					
+				set_politics = { ruling_party = communism }
+			}
+	}
+	
+	option = {
+		name = crimea.15.c
+		
+		controller = { 
+			SOV = {
+				create_wargoal = {
+				target = CRI
+				type = take_state_focus
+				generator = { 137 1017 }
+				}
+				
+				add_ai_strategy = {
+					type = declare_war
+					id = CRI
+					value = 100
+				}
+			}
+			
+			GER = {
+				add_ai_strategy = {
+					type = dont_join_wars_with
+					id = CRI
+					value = 350
+				}
+			}
+		}
 	}
 }

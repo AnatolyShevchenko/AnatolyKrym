@@ -8880,5 +8880,33 @@ spriteTypes = {
 		name = GFX_egor_prozenko
 		texturefile = "gfx/leaders/CRI/CRI_egor_prozenko.dds"
 	}
+	
+	### TOPALOV ###
+	
+	spriteType = {
+		name = GFX_nikolay_topalov
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov_max
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov_max.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov1
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov1.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov2
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov2.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov3
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov3.dds"
+	}
+	### TOPALOV ###
 
 }

@@ -485,7 +485,11 @@ crimea_operation = {
 				CRI = {
 						has_government = fascism
 						has_civil_war = no
+						NOT = {
+						has_war_with = SOV
+						}
 					}
+					
 			}
 			
 			complete_effect = {
@@ -502,6 +506,110 @@ crimea_operation = {
 					}
 				}
 			}
+			random_list = {
+			
+			}
+			
+			days_remove = 30
+			
+			ai_will_do = { factor = 100 }
+			
+			modifier = {
+			}
+ 	}
+	
+	promoscow_crimea = {
+		icon = generic_army_support
+			available = {
+				CRI = {
+					has_idea = CRI_sovet_vlianie
+					has_government = fascism
+					has_civil_war = no
+				}
+			}
+			cost = 25
+			
+			allowed = { 
+				tag = SOV
+			}
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_government = communism
+				
+				CRI = {
+						has_government = fascism
+						has_civil_war = no
+						has_idea = CRI_sovet_vlianie
+						NOT = {
+						has_war_with = SOV
+						}
+					}
+			}
+			
+			complete_effect = {
+			
+			}
+			remove_effect = {
+					CRI = {
+						country_event = crimea.14
+					}
+				}
+			random_list = {
+			
+			}
+			
+			days_remove = 30
+			
+			ai_will_do = { factor = 75 }
+			
+			modifier = {
+			}
+ 	}
+	
+	ultimatum_crimea = {
+		icon = generic_army_support
+			available = {
+				CRI = {
+					communism > 0.35
+					has_government = fascism
+					has_civil_war = no
+				}
+			}
+			cost = 50
+			
+			allowed = { 
+				tag = SOV
+			}
+			
+			
+			activation = {
+			}
+			
+			visible = {
+				has_government = communism
+				
+				CRI = {
+						has_government = fascism
+						has_civil_war = no
+						has_idea = CRI_sovet_vlianie
+						NOT = {
+						has_war_with = SOV
+						}
+					}
+			}
+			
+			complete_effect = {
+			
+			}
+			remove_effect = {
+				CRI = {
+					country_event = crimea.15
+					}
+				}
 			random_list = {
 			
 			}
