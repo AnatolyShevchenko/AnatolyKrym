@@ -7,4 +7,4 @@ tags={
 	"Historical"
 }
 name="Anatoly Krym"
-supported_version="1.16.5"
+supported_version="1.17.*"
