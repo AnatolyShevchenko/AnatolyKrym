@@ -145,19 +145,19 @@ bookmarks = {
 			}		
 		}
 		"CRI"={
-			history = "CRI_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				CRI_anti_chess_politic
-				CRI_bezrabotica
-				CRI_anatoly_protestes
-			}	
-			focuses = {
-				CRI_restovration
-				CRI_InviteAnatoly
-				CRI_shashki
-			}			
-		}
+            history = "CRI_GATHERING_STORM_DESC"
+            ideology = communism
+            ideas = {
+                CRI_anti_chess_politic
+                CRI_bezrabotica
+                CRI_anatoly_protestes
+            }
+            focuses = {
+                CRI_restovration
+                CRI_InviteAnatoly
+                CRI_shashki
+            }
+        }
 		"SOV"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
@@ -344,9 +344,11 @@ bookmarks = {
 				YUG_dissolve_serbia
 			}
 		}
+		# Check bottom for CHI with NCNS
 		"CHI"={
 			minor = yes
 			history = "CHI_GATHERING_STORM_DESC"
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = neutrality
 			ideas = {
 				CHI_army_corruption_1
@@ -359,9 +361,11 @@ bookmarks = {
 				CHI_invite_the_flying_tigers
 			}
 		}
+		# Check bottom for PRC with NCNS
 		"PRC"={
 			minor = yes
 			history = "PRC_GATHERING_STORM_DESC"
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = communism
 			ideas = {
 				PRC_the_long_march_1
@@ -374,9 +378,11 @@ bookmarks = {
 				PRC_anti_japanese_expedition
 			}
 		}
+		# Check bottom for MAN with NCNS
 		"MAN"={
 			minor = yes
 			history = "MAN_GATHERING_STORM_DESC"
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			ideology = fascism
 			ideas = {
 				MAN_banditry
@@ -389,14 +395,16 @@ bookmarks = {
 				MAN_claim_the_mandate_of_heaven
 			}
 		}
-		
+		# Check bottom for GXC with NCNS
 		"GXC"={
 			minor = yes
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -404,13 +412,16 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
+		# Check bottom for YUN with NCNS
 		"YUN"={
 			minor = yes
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -418,13 +429,16 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
+		# Check bottom for SHX with NCNS
 		"SHX"={
 			minor = yes
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -432,13 +446,16 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
+		# Check bottom for XSM with NCNS
 		"XSM"={
 			minor = yes
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -446,13 +463,16 @@ bookmarks = {
 				CHI_join_the_chinese_soviet
 			}
 		}		
+		# Check bottom for SIK with NCNS
 		"SIK"={
 			minor = yes
+			available = { NOT = { has_dlc = "No Compromise, No Surrender" } }
 			history = "WARLORDS_GATHERING_STORM_DESC"
 			ideology = fascism
 			ideas = {
 				PRC_government_corruption
 				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
 			}
 			focuses = {
 				CHI_join_the_republican_government
@@ -837,9 +857,30 @@ bookmarks = {
 			minor = yes
 			history = BEL_GATHERING_STORM_DESC
 			ideology = democratic
-			available = { has_dlc = "Gotterdammerung" } 
+			available = { 
+				has_dlc = "Gotterdammerung" 
+				NOT = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+			} 
 			ideas = {
 				BEL_chasseurs_ardennais_ns
+				BEL_scars_of_ww1_ns_fake
+				BEL_corruption_ns_fake
+			}
+			focuses = {
+				BEL_v_for_victory
+				BEL_belgica
+				BEL_legacy_of_the_great_war
+			}
+		}
+		BEL = {
+			minor = yes
+			history = BEL_GATHERING_STORM_DESC
+			ideology = democratic
+			available = { has_dlc = "Gotterdammerung" has_dlc = "No Compromise, No Surrender" } 
+			ideas = {
+				BEL_chasseurs_ardennais_ns_ncns
 				BEL_scars_of_ww1_ns_fake
 				BEL_corruption_ns_fake
 			}
@@ -912,6 +953,176 @@ bookmarks = {
 				IRQ_bakr_sidqi_coup
 				#Replace this with KUR focus
 				IRQ_decouple_from_the_pound
+			}
+		}
+		PHI = {
+			minor = yes
+			history = "PHI_GATHERING_STORM_DESC" 
+			ideology = neutrality
+			available = { has_dlc = "No Compromise, No Surrender" }
+			new_content = yes
+			ideas = {
+				PHI_island_nation_ns_fake
+				PHI_the_great_depression_ns_fake
+				PHI_philippine_army_ns_fake
+			}
+			focuses = {
+				PHI_appoint_macarthur
+				PHI_national_defense_act
+				PHI_treaty_of_manila
+			}
+		}
+		CHI = {
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			available = { has_dlc = "No Compromise, No Surrender" }
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				CHI_neglected_countryside_fake_ns
+				CHI_corruption_in_the_armed_forces_fake_ns
+				CHI_nine_power_treaty_sea_fake_ns
+			}
+			focuses = {
+				CHI_denounce_feudalism
+				CHI_prepare_for_a_change_in_leadership
+				CHI_strengthening_our_resolve
+			}
+		}
+		PRC = {
+			minor = yes
+			history = "PRC_GATHERING_STORM_DESC"
+			available = { has_dlc = "No Compromise, No Surrender" }
+			ideology = communism
+			new_content = yes
+			ideas = {
+				PRC_central_committee_1936_fake
+				PRC_the_chinese_red_army_1936_fake
+				PRC_agrarian_society_1936_fake
+			}
+			focuses = {
+				PRC_raid_weapon_depots
+				PRC_hundred_regiments_offensive
+				PRC_rural_recruitment
+			}
+		}
+		MAN = {
+			minor = yes
+			history = "MAN_TSR_GATHERING_STORM_DESC"
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			ideology = fascism
+			new_content = yes
+			ideas = {
+				MAN_banditry
+				MAN_the_kangde_emperor
+				MAN_low_legitimacy_5
+			}
+			focuses = {
+				MAN_tsr_obedience
+				MAN_tsr_depose_puyi
+				MAN_tsr_claim_the_mandate_of_heaven
+			}
+		}
+		GDC = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				GXC_formation_of_the_nraja
+				GXC_rumors_of_deposition
+				GXC_declare_opposition
+			}
+		}		
+		SIC = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				SIC_push_back_the_tibetans
+				SIC_sichuan_still_stands
+				SIC_the_armies_of_yang_sen
+			}
+		}		
+		XIC = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				XIC_discussions_in_luochuan
+				XIC_request_relocation_to_northeastern_command
+				XIC_restore_the_homeland
+			}
+		}		
+		XSM = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				XSM_a_hui_army
+				XSM_a_united_ma_state
+				XSM_send_ma_lin_on_hajj
+			}
+		}		
+		KHM = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = neutrality
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				KHM_call_for_aid
+				XSM_a_united_ma_state
+				KHM_the_sinkiang_ma_clique
+			}
+		}	
+		SIK = {
+			minor = yes
+			available = { has_dlc = "No Compromise, No Surrender" } 
+			history = "WARLORDS_GATHERING_STORM_DESC"
+			ideology = communism
+			new_content = yes
+			ideas = {
+				PRC_government_corruption
+				CHI_ineffective_bureaucracy_warlord
+				CHI_warlord_state_idea
+			}
+			focuses = {
+				SIK_a_united_sinkiang_clique
+				SIK_march_into_khotan
+				SIK_six_great_policies
 			}
 		}
 		effect = {

@@ -1,0 +1,16 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_report_event_poedanie"
+		texturefile = "gfx/event_pictures/report_event_poedanie.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_pohudenie"
+		texturefile = "gfx/event_pictures/report_event_topalov_pohudenie.dds"
+	}
+
+}
+
+
+

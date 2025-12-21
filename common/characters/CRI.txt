@@ -1,8 +1,7 @@
 characters={
 	CRI_shashkovi_sovet = {
 	
-		name = "Shashkovi_sovet" 
-		desc = "Shashkovi_sovet_DESC"
+		name = Shashkovi_sovet
 		
 		portraits = {
 			civilian = {
@@ -22,8 +21,7 @@ characters={
 	
 	CRI_shakhmatni_sovet = {
 	
-		name = "Shakhmatni_sovet" 
-		desc = "Shakhmatni_sovet_DESC"
+		name = Shakhmatni_sovet 
 		
 		portraits = {
 			civilian = {
@@ -42,8 +40,7 @@ characters={
 	}
 	
 	CRI_koti = {
-		name = "Koti" 
-		desc = "Koti_DESC"
+		name = Koti
 		portraits = {
 			civilian = {
 				large = GFX_koti
@@ -61,8 +58,7 @@ characters={
 	
 	CRI_anatoly_shevchenko = {
 	
-		name = "Anatoly_Shevchenko" 
-		desc = "Anatoly_Shevchenko_DESC"
+		name = Anatoly_Shevchenko
 		
 		portraits = {
 			civilian = {

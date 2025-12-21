@@ -1,0 +1,88 @@
+spriteTypes = {
+
+	##############КРЫМ ШАХМАТЫ!!!!######################
+	
+	spriteType = {
+		name = GFX_shashkovi_sovet
+		texturefile = "gfx/leaders/CRI/CRI_shashkovi_sovet.dds"
+	}
+	
+	spriteType = {
+		name = GFX_shakhmatni_sovet
+		texturefile = "gfx/leaders/CRI/CRI_shakhmatni_sovet.dds"
+	}
+	
+	spriteType = {
+		name = GFX_koti
+		texturefile = "gfx/leaders/CRI/CRI_koti.dds"
+	}
+	
+	spriteType = {
+		name = GFX_anatoly_shevchenko
+		texturefile = "gfx/leaders/CRI/CRI_anatoly_shevchenko.dds"
+	}
+	
+	spriteType = {
+		name = GFX_alekseev_aleksandr
+		texturefile = "gfx/leaders/CRI/CRI_alekseev_aleksandr.dds"
+	}
+	
+	spriteType = {
+		name = GFX_anton_boykov
+		texturefile = "gfx/leaders/CRI/CRI_anton_boykov.dds"
+	}
+	
+	spriteType = {
+		name = GFX_sharik
+		texturefile = "gfx/leaders/CRI/CRI_sharik.dds"
+	}
+	
+	spriteType = {
+		name = GFX_shumizki_timur
+		texturefile = "gfx/leaders/CRI/CRI_shumizki_timur.dds"
+	}
+	
+	spriteType = {
+		name = GFX_vlad_kostin
+		texturefile = "gfx/leaders/CRI/CRI_vlad_kostin.dds"
+	}
+	
+	spriteType = {
+		name = GFX_igor_plokhotnichenko
+		texturefile = "gfx/leaders/CRI/CRI_igor_plokhotnichenko.dds"
+	}
+	
+	spriteType = {
+		name = GFX_egor_prozenko
+		texturefile = "gfx/leaders/CRI/CRI_egor_prozenko.dds"
+	}
+	
+	### TOPALOV ###
+	
+	spriteType = {
+		name = GFX_nikolay_topalov
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov_max
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov_max.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov1
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov1.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov2
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov2.dds"
+	}
+	
+	spriteType = {
+		name = GFX_nikolay_topalov3
+		texturefile = "gfx/leaders/CRI/topalov/CRI_nikolay_topalov3.dds"
+	}
+	### TOPALOV ###
+
+}
