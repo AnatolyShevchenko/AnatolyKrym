@@ -1,0 +1,47 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_egor_dyatlov"
+		texturefile = "gfx/interface/ideas/idea_egor_dyatlov.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_maksim_vinogradov"
+		texturefile = "gfx/interface/ideas/idea_maksim_vinogradov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov3"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov2"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov_max"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov_max.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov1"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_magnus_karlsen"
+		texturefile = "gfx/interface/ideas/idea_magnus_karlsen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_alekseev_aleksandr"
+		texturefile = "gfx/interface/ideas/idea_alekseev_aleksandr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_nikolay_topalov"
+		texturefile = "gfx/interface/ideas/idea_nikolay_topalov.dds"
+	}
+}

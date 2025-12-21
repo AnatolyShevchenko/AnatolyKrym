@@ -1,0 +1,15 @@
+spriteTypes = {	
+
+	### categories
+	
+	spriteType = {
+		name = "GFX_decision_topalov"
+		texturefile = "gfx/interface/decisions/decision_category_topalov.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_topalov_gym"
+		texturefile = "gfx/interface/decisions/decision_category_topalov_gym.dds"
+	}
+
+}
