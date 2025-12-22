@@ -733,7 +733,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_MercyShashki
-		icon = GFX_goal_unknown
+		icon = GFX_focus_ShahkovySovet
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_ShashkoviDocumentDestroy
@@ -747,7 +747,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_InviteShashkovihWorkers
-		icon = GFX_goal_unknown
+		icon = GFX_focus_cze_german_puppet
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_MercyShashki
@@ -758,7 +758,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_KnifeAtTheBack
-		icon = GFX_goal_unknown
+		icon = GFX_focus_hol_war_on_pacifism
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_InviteAnatoly
@@ -769,7 +769,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_UseShashkovyArmy
-		icon = GFX_goal_unknown
+		icon = GFX_CRI_focus_shaski_army
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_MercyShashki
@@ -792,7 +792,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CRI_ShashkoviySovet
-		icon = GFX_goal_unknown
+		icon = GFX_focus_AST_squander_bug
 		cost = 10,00
 		prerequisite = {
 			focus = CRI_UseShashkovyArmy
