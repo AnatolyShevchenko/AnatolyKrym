@@ -46,46 +46,6 @@ state = {
 			arms_factory = 2
 			industrial_complex = 2
 
-			3686 = {
-				naval_base = 5
-				coastal_bunker = 3
-			}
-			
-			3722 = {
-				bunker = 3
-				coastal_bunker = 1
-			}
-			6704 = {
-				coastal_bunker = 2
-			}
-			
-			11649 = {
-				coastal_bunker = 1
-			}
-			
-			705 = {
-				coastal_bunker = 3
-			}
-			
-			13380 = {
-				coastal_bunker = 1
-			}
-			
-			13385 = {
-				coastal_bunker = 1
-			}
-			
-			13384 = {
-				coastal_bunker = 1
-			}
-			
-			13383 = {
-				coastal_bunker = 1
-			}
-			
-			13381 = {
-				coastal_bunker = 1
-			}
 		}
 
 		add_claim_by = SOV

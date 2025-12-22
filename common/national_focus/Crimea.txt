@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = CRI_restovration
 		icon = GFX_focus_CRI_restovration
-		cost = 15,00
+		cost = 15
 		mutually_exclusive = {
 			focus = CRI_shashki
 		}
@@ -40,7 +40,7 @@ focus_tree = {
 	focus = {
 		id = CRI_shashki
 		icon = GFX_focus_ShahkovySovet
-		cost = 10,00
+		cost = 10
 		mutually_exclusive = {
 			focus = CRI_restovration
 		}
@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = CRI_Rearmament
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 12
 		y = 0
 
@@ -59,7 +59,7 @@ focus_tree = {
 	focus = {
 		id = CRI_IndustryofAnatolia
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		x = 30
 		y = 0
 
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = CRI_infantryReform
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_Rearmament
 		}
@@ -78,7 +78,7 @@ focus_tree = {
 	focus = {
 		id = CRI_MilitaryTraining
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_infantryReform
 		}
@@ -89,7 +89,7 @@ focus_tree = {
 	focus = {
 		id = CRI_MilitarySchools
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_MilitaryTraining
 		}
@@ -100,7 +100,7 @@ focus_tree = {
 	focus = {
 		id = CRI_TankDivision
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_infantryReform
 		}
@@ -111,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ExpTanks
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_TankDivision
 		}
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = CRI_Crimea
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ExpTanks
 		}
@@ -136,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = CRI_aviationReform
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_Rearmament
 		}
@@ -147,7 +147,7 @@ focus_tree = {
 	focus = {
 		id = CRI_dive_bombers
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_aviationReform
 		}
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AirAdvantage
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_aviationReform
 		}
@@ -169,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = CRI_GroudSupport
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_AirAdvantage
 		}
@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = CRI_Rockets
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_GroudSupport
 		}
@@ -197,7 +197,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AbsolutGroundControl
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_Rockets
 		}
@@ -211,7 +211,7 @@ focus_tree = {
 	focus = {
 		id = CRI_CreateAPC
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_aviationReform
 		}
@@ -222,7 +222,7 @@ focus_tree = {
 	focus = {
 		id = CRI_SeaSupport
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_CreateAPC
 		}
@@ -239,7 +239,7 @@ focus_tree = {
 	focus = {
 		id = CRI_SeaWarTraining
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_SeaSupport
 		}
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = CRI_SeaReform
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_Rearmament
 		}
@@ -261,7 +261,7 @@ focus_tree = {
 	focus = {
 		id = CRI_NewShipProject
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_SeaReform
 		}
@@ -272,7 +272,7 @@ focus_tree = {
 	focus = {
 		id = CRI_PerfectShip
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_NewShipProject
 		}
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ShipTraining
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_SeaReform
 		}
@@ -294,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = CRI_SeaWolfs
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ShipTraining
 		}
@@ -305,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = CRI_Azov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_SeaWolfs
 		}
@@ -319,7 +319,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AbsolutSeaControl
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_Azov
 		}
@@ -333,7 +333,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_75
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_IndustryofAnatolia
 		}
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_76
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_IndustryofAnatolia
 		}
@@ -355,7 +355,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_77
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_76
 		}
@@ -369,7 +369,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_78
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_77
 		}
@@ -378,9 +378,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = newfocus_87
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = newfocus_78
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
 		id = newfocus_79
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_77
 		}
@@ -391,7 +402,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_83
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_79
 		}
@@ -405,7 +416,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_80
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_77
 		}
@@ -416,7 +427,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_81
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_77
 		}
@@ -427,7 +438,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_84
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_81
 		}
@@ -439,23 +450,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = newfocus_84
-		icon = GFX_goal_unknown
-		cost = 10,00
-		prerequisite = {
-			focus = newfocus_81
-		}
-		prerequisite = {
-			focus = newfocus_80
-		}
-		x = 23
-		y = 4
-
-	}
-	focus = {
 		id = newfocus_86
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_84
 		}
@@ -469,7 +466,7 @@ focus_tree = {
 	focus = {
 		id = newfocus_85
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = newfocus_81
 		}
@@ -480,7 +477,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UkrainePowers
 		icon = GFX_focus_UkrainPowers
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CRI_restovration
 		}
@@ -496,7 +493,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UkraineCrimea
 		icon = GFX_focus_CRI_Crimea
-		cost = 3,00
+		cost = 3
 		prerequisite = {
 			focus = CRI_UkrainePowers
 		}
@@ -529,7 +526,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteFarmers
 		icon = GFX_focus_generic_farmland
-		cost = 3,57
+		cost = 3
 		prerequisite = {
 			focus = CRI_UkrainePowers
 		}
@@ -545,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = CRI_fondShahmat
 		icon = GFX_focus_ShahmotnyFond
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CRI_restovration
 		}
@@ -560,7 +557,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteMagnusCarlsen
 		icon = GFX_focus_invite_MagnusCarlsen
-		cost = 3,57
+		cost = 3
 		prerequisite = {
 			focus = CRI_fondShahmat
 		}
@@ -577,7 +574,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UnPrisonPawns
 		icon = GFX_focus_generic_subjugation
-		cost = 3,57
+		cost = 3
 		prerequisite = {
 			focus = CRI_fondShahmat
 		}
@@ -611,7 +608,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteAnatoly
 		icon = GFX_focus_CRI_InviteAnatoly
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_InviteFarmers
 			focus = CRI_InviteMagnusCarlsen
@@ -639,7 +636,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ShashkoviDocumentDestroy
 		icon = GFX_focus_BRA_repeale_national_security_law
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_InviteAnatoly
 		}
@@ -653,7 +650,7 @@ focus_tree = {
 	focus = {
 		id = CRI_KillShashki
 		icon = GFX_CRI_focus_killshashki
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ShashkoviDocumentDestroy
 		}
@@ -670,7 +667,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AntiShashkoviyPact
 		icon = GFX_focus_ARG_anti_corruption_policies
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
@@ -684,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ShashkoviyZapret
 		icon = GFX_CRI_focus_shashkoviyzapret
-		cost = 5,00
+		cost = 5
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
@@ -703,7 +700,7 @@ focus_tree = {
 	focus = {
 		id = CRI_MercyShashki
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ShashkoviDocumentDestroy
 		}
@@ -717,7 +714,7 @@ focus_tree = {
 	focus = {
 		id = CRI_InviteShashkovihWorkers
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_MercyShashki
 		}
@@ -728,7 +725,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UseShashkovyArmy
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_MercyShashki
 		}
@@ -739,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = CRI_KnifeAtTheBack
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_InviteAnatoly
 		}
@@ -750,7 +747,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AntiShashkoviySovet
 		icon = GFX_CRI_focus_antishashkoviysovet
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ShashkoviyZapret
 			focus = CRI_AntiShashkoviyPact
@@ -762,7 +759,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ShashkoviySovet
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_UseShashkovyArmy
 			focus = CRI_InviteShashkovihWorkers
@@ -774,7 +771,7 @@ focus_tree = {
 	focus = {
 		id = CRI_IdeaOfCrimeaEmpire
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ShashkoviySovet
 			focus = CRI_AntiShashkoviySovet
@@ -786,7 +783,7 @@ focus_tree = {
 	focus = {
 		id = CRI_KhersonSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_IdeaOfCrimeaEmpire
 		}
@@ -797,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ZaporizhiaSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_KhersonSubordination
 		}
@@ -808,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = CRI_KrasnodarSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_KhersonSubordination
 		}
@@ -819,7 +816,7 @@ focus_tree = {
 	focus = {
 		id = CRI_RostovSabordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ZaporizhiaSubordination
 		}
@@ -833,7 +830,7 @@ focus_tree = {
 	focus = {
 		id = CRI_StalinoSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_KrasnodarSubordination
 		}
@@ -847,7 +844,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AzovEmpire
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_StalinoSubordination
 		}
@@ -861,7 +858,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ExpandInfluenceToTheSouth
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_AzovEmpire
 		}
@@ -872,7 +869,7 @@ focus_tree = {
 	focus = {
 		id = CRI_CreateChessAlly
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_IdeaOfCrimeaEmpire
 		}
@@ -883,7 +880,7 @@ focus_tree = {
 	focus = {
 		id = CRI_NikolaevSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_KhersonSubordination
 		}
@@ -894,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = CRI_OdessaSubordination
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_KhersonSubordination
 		}
@@ -905,7 +902,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ExpandInfluenceToTheNorth
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_NikolaevSubordination
 		}
@@ -919,7 +916,7 @@ focus_tree = {
 	focus = {
 		id = CRI_OldRegions
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ExpandInfluenceToTheSouth
 		}
@@ -933,7 +930,7 @@ focus_tree = {
 	focus = {
 		id = CRI_UkraineCevilWar
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -944,7 +941,7 @@ focus_tree = {
 	focus = {
 		id = CRI_KubatCevilWar
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -955,7 +952,7 @@ focus_tree = {
 	focus = {
 		id = CRI_CaucasusCevilWar
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -966,7 +963,7 @@ focus_tree = {
 	focus = {
 		id = CRI_TurkeyCapture
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -977,7 +974,7 @@ focus_tree = {
 	focus = {
 		id = CRI_PlanSedoyAzov
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -988,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = CRI_PlanRoconda
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_OldRegions
 		}
@@ -999,7 +996,7 @@ focus_tree = {
 	focus = {
 		id = CRI_BlackSeaEmpire
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_PlanRoconda
 		}
@@ -1022,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = CRI_CrimeaFuture
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_BlackSeaEmpire
 		}
@@ -1033,7 +1030,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ConflictWithYugoslavia
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_CrimeaFuture
 		}
@@ -1044,7 +1041,7 @@ focus_tree = {
 	focus = {
 		id = CRI_WarWithSoviets
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_CrimeaFuture
 		}
@@ -1058,7 +1055,7 @@ focus_tree = {
 	focus = {
 		id = CRI_PeaceWithSoviets
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_CrimeaFuture
 		}
@@ -1072,7 +1069,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AntiCommunismPropaganda
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_WarWithSoviets
 		}
@@ -1083,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = CRI_FinallBlowToTheUSSR
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_AntiCommunismPropaganda
 		}
@@ -1094,7 +1091,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AttackThirdReichWithUSSR
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_PeaceWithSoviets
 		}
@@ -1105,7 +1102,7 @@ focus_tree = {
 	focus = {
 		id = CRI_WorldPeace
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_AttackThirdReichWithUSSR
 		}
@@ -1116,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = CRI_WarAgainstThirdReich
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ConflictWithYugoslavia
 		}
@@ -1130,7 +1127,7 @@ focus_tree = {
 	focus = {
 		id = CRI_PeaceWithThirdReich
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_ConflictWithYugoslavia
 		}
@@ -1144,7 +1141,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ThirdReichDanger
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_WarAgainstThirdReich
 		}
@@ -1155,7 +1152,7 @@ focus_tree = {
 	focus = {
 		id = CRI_USSRDanger
 		icon = GFX_goal_unknown
-		cost = 10,00
+		cost = 10
 		prerequisite = {
 			focus = CRI_PeaceWithThirdReich
 		}
