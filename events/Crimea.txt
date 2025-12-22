@@ -46,16 +46,344 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	# The Civil War Starts
-	option = {
-		name = crimea.2.a
-		hidden_effect = {
-		add_ideas = CRI_civil_war_anatoly
-		
+		option = {
+		name = crimea.1.a
+
+			hidden_effect = {
+
+				set_capital = { state = 137 }
+
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.5
+					navy_ratio = 0.1
+					capital = 137
+					states = all
+					keep_all_characters = yes
+					states_filter = {
+					    OR = {
+					    	state = 137
+					    }
+					    is_controlled_by = ROOT
+					}
+					PREV = {  # Original country
+						CRI_shashkovi_sovet = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway	
+						}
+						CRI_anton_boykov = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
 						
-    	}
+						CRI_sharik = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_vlad_kostin = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_shumizki_timur = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+				    }
+					
+					set_cosmetic_tag = CRI_civil_war_com
+
+				    IF = {
+				    	limit = {
+				    		PREV.PREV = {
+				    			NOT = {
+				    				has_country_leader = {
+				    					ruling_only = yes
+				    					character = CRI_shashkovi_sovet
+				    				}
+				    			}
+				    			has_civil_war = yes
+				    		}
+				    	}
+				    	PREV.PREV = {
+				    		promote_character = {
+				    			character = CRI_shashkovi_sovet
+				    			ideology = stalinism
+				    		}
+				    	}
+				    }
+
+				    PREV.PREV = {
+			    		delete_unit_template_and_units = {
+			    			division_template = "Shashkins opolchenya"
+			    			disband = yes #if yes, will refund equipment/manpower.
+			    		}
+
+			    		division_template = {
+			    		    name = "Shashkins opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_INF_01
+			    		    priority = 0
+			    		    template_counter = 79 # The Viking Helmet 
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		        militia = { x = 0 y = 3 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 137
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+			    		}
+				    }
+				}
+			}
+		ELSE = { # We didn't placate Raeder
+
+			hidden_effect = {
+
+				set_capital = { state = 1047 }
+
+				start_civil_war = {
+					ruling_party = fascism
+					ideology = communism
+					size = 0.5
+					navy_ratio = 0.8
+					capital = 137
+					states = all
+					keep_all_characters = yes
+					states_filter = {
+					    OR = {
+					    	state = 137
+					    }
+					    is_controlled_by = ROOT
+					}
+					PREV = {  # Original country
+						CRI_shashkovi_sovet = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway	
+						}
+						CRI_anton_boykov = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_sharik = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_vlad_kostin = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+						CRI_shumizki_timur = { # Character
+						    set_nationality = PREV.PREV
+						    # Transfers to breakaway
+						}
+						
+				    }
+
+				    IF = {
+				    	limit = {
+				    		PREV.PREV = {
+				    			NOT = {
+				    				has_country_leader = {
+				    					ruling_only = yes
+				    					character = CRI_shashkovi_sovet
+				    				}
+				    			}
+				    			has_civil_war = yes
+				    		}
+				    	}
+				    	PREV.PREV = {
+				    		promote_character = {
+				    			character = CRI_shashkovi_sovet
+				    			ideology = stalinism
+				    		}
+				    	}
+				    }
+
+				    PREV.PREV = {
+			    		delete_unit_template_and_units = {
+			    			division_template = "Shashkins opolchenya"
+			    			disband = yes #if yes, will refund equipment/manpower.
+			    		}
+
+			    		division_template = {
+			    		    name = "Shashkins opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_INF_01
+			    		    priority = 0
+			    		    template_counter = 79 # The Viking Helmet 
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		        militia = { x = 0 y = 3 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 137
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"Erste Shashkins opolchenya\" division_template = \"Shashkins opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+			    		}
+				    }
+				}
+			}
+		}
+		
+		hidden_effect = {
+		
+		set_cosmetic_tag = CRI_civil_war
+			
+			CRI = {
+			    		delete_unit_template_and_units = {
+			    			division_template = "Shashkovie opolchenya"
+			    			disband = yes #if yes, will refund equipment/manpower.
+			    		}
+
+			    		division_template = {
+			    		    name = "Shashkovie opolchenya"
+			    		    is_locked = yes
+			    		    division_names_group = CRI_INF_01
+			    		    priority = 0
+			    		    template_counter = 79 # The Viking Helmet 
+			    		    regiments = {
+			    		        militia = { x = 0 y = 0 } 
+			    		        militia = { x = 0 y = 1 } 
+			    		        militia = { x = 0 y = 2 }
+			    		    }
+			    		} 
+			    		random_state = {
+			    			limit = {
+			    				OR = {
+			    					state = 1047
+			    				}
+			    			}
+			    			create_unit = {
+			    			    division = "name = \"Shashkovie opolchenya\" division_template = \"Shashkovie opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkovie opolchenya\" division_template = \"Shashkovie opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkovie opolchenya\" division_template = \"Shashkovie opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkovie opolchenya\" division_template = \"Shashkovie opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+							
+							create_unit = {
+			    			    division = "name = \"Shashkovie opolchenya\" division_template = \"Shashkovie opolchenya\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+			    			    owner = PREV 
+			    			}
+			    		}
+				    }
+			}
 	}
-}
+		hidden_effect = {
+		
+			random_other_country = {
+				limit = {
+					original_tag = CRI
+					has_government = communism
+				}
+				set_stability = 0.9
+				set_war_support = 0.8
+			}
+		}
+		
+		add_stability = -0.35
+
+		hidden_effect = { 
+			set_cosmetic_tag = CRI_civil_war
+		}
+
+		random_other_country = {
+			limit = {
+				original_tag = CRI
+				has_government = communism
+			}
+			set_cosmetic_tag = CRI_civil_war
+		}
+		
+		CRI_shakhmatni_sovet = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = falangism
+					traits = {
+						conservative_grandee
+						nationalist_symbol
+					}
+				}
+				promote_leader = yes
+			}
+		}
+
+	
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					original_tag = CRI
+					has_government = communism
+				}
+			}
+		}
+	}
+	
+	
 	country_event = {
 	id = crimea.3
 	title = crimea.3.t
@@ -84,7 +412,7 @@ country_event = {
 		name = crimea.3.a
 		add_political_power = 50
 		delete_unit_template_and_units = {
-		division_template = "Shevchenos's opolchenya"
+		division_template = "Shashkovie opolchenya"
 		}
 		
 		hidden_effect = {

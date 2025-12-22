@@ -21,11 +21,11 @@ state = {
 		}
 		
 		victory_points = {
-			13377 15 # Shelkino
+			13383 15 # Shelkino
 		}
 		
 		victory_points = {
-			13378 3 # Feodosia
+			13384 3 # Feodosia
 		}
 		
 		buildings = {
