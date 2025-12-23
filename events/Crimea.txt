@@ -94,7 +94,7 @@ country_event = {
 						
 				    }
 					
-					set_cosmetic_tag = CRI_civil_war_com
+					
 
 				    IF = {
 				    	limit = {
@@ -117,6 +117,9 @@ country_event = {
 				    }
 
 				    PREV.PREV = {
+					
+						set_cosmetic_tag = CRI_civil_war_com
+						
 			    		delete_unit_template_and_units = {
 			    			division_template = "Shashkins opolchenya"
 			    			disband = yes #if yes, will refund equipment/manpower.
@@ -329,10 +332,20 @@ country_event = {
 			    			    owner = PREV 
 			    			}
 			    		}
+						
+								
+							set_party_name = {
+								ideology = communism
+								long_name = CRI_communism_party_topalov_long
+								name = CRI_communism_party_topalov
+								}
 				    }
 			}
 	}
 		hidden_effect = {
+
+		
+		
 		
 			random_other_country = {
 				limit = {
