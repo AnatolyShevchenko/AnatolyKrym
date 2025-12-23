@@ -3,6 +3,11 @@ spriteTypes = {
 	##############КРЫМ ШАХМАТЫ!!!!######################
 	
 	spriteType = {
+		name = GFX_danila_mamrosenko
+		texturefile = "gfx/leaders/CRI/CRI_danila_mamrosenko.png"
+	}
+	
+	spriteType = {
 		name = GFX_shashkovi_sovet
 		texturefile = "gfx/leaders/CRI/CRI_shashkovi_sovet.dds"
 	}

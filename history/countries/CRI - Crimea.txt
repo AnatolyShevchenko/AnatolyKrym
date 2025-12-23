@@ -61,5 +61,6 @@ recruit_character = CRI_anton_boykov
 recruit_character = CRI_sharik
 recruit_character = CRI_vlad_kostin
 recruit_character = CRI_shumizki_timur
+recruit_character = CRI_danila_mamrosenko
 
 
