@@ -609,7 +609,7 @@ crimea_shashki_destroy = {
 		priority = 100
 		allowed = { tag = CRI }
 		fire_only_once = yes
-		days_mission_timeout = 120
+		days_mission_timeout = 150
 		is_good = no
 		available = {
 			hidden_trigger = { always = no }
@@ -655,7 +655,7 @@ crimea_shashki_destroy = {
 			}
 			add_days_mission_timeout  = {
 				mission = crimia_Anatolys_paranoya
-				days = 50
+				days = 55
 			}
 		}
 		complete_effect = {
@@ -697,7 +697,7 @@ crimea_shashki_destroy = {
 					}
 					add_days_mission_timeout  = {
 						mission = crimia_Anatolys_paranoya
-						days = 50
+						days = 55
 					}
 			}
 			complete_effect = {
@@ -740,7 +740,7 @@ crimea_shashki_destroy = {
 					}
 					add_days_mission_timeout  = {
 						mission = crimia_Anatolys_paranoya
-						days = 50
+						days = 55
 					}
 			}
 			complete_effect = {
@@ -777,7 +777,7 @@ crimea_shashki_destroy = {
 					}
 					add_days_mission_timeout  = {
 						mission = crimia_Anatolys_paranoya
-						days = 50
+						days = 55
 					}
 			}
 			complete_effect = {

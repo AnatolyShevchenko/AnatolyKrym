@@ -701,7 +701,7 @@ focus_tree = {
 	focus = {
 		id = CRI_AntiShashkoviyPact
 		icon = GFX_focus_ARG_anti_corruption_policies
-		cost = 5,00
+		cost = 10,00
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
@@ -715,7 +715,7 @@ focus_tree = {
 	focus = {
 		id = CRI_ShashkoviyZapret
 		icon = GFX_CRI_focus_shashkoviyzapret
-		cost = 5,00
+		cost = 10,00
 		prerequisite = {
 			focus = CRI_KillShashki
 		}
@@ -790,7 +790,10 @@ focus_tree = {
 		}
 		x = 33
 		y = 8
-
+		available = {
+			fascism > 0.7
+			has_stability > 0.5
+		}
 	}
 	focus = {
 		id = CRI_ShashkoviySovet
