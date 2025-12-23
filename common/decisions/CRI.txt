@@ -615,7 +615,7 @@ crimea_shashki_destroy = {
 			hidden_trigger = { always = no }
 		}
 		activation = {
-
+			has_completed_focus = CRI_KillShashki
 		}
 		timeout_effect = {
 				add_manpower = -125000
@@ -676,7 +676,7 @@ crimea_shashki_destroy = {
 			days_remove = 60
 			
 			visible = {
-				#has_country_flag = remove_effect_flag
+				has_country_flag = remove_effect_flag
 			}
 			
 			custom_cost_trigger = {
@@ -689,6 +689,7 @@ crimea_shashki_destroy = {
 			
 					hidden_effect = {
 						clr_country_flag = chessplayers_safety_flag
+						set_country_flag = chessplayers_safety_flag2
 					}
 					
 					limit = {
@@ -722,15 +723,18 @@ crimea_shashki_destroy = {
 			days_remove = 60
 				
 			visible = {
-				#has_country_flag = remove_effect_flag
+				has_country_flag = chessplayers_safety_flag2
 			}		
-		
+			cost = 100
 			remove_effect = {
-			
-					hidden_effect = {
-						#clr_country_flag = 
+					add_popularity = {
+					ideology = fascism
+					popularity = 0.10
 					}
-						
+					hidden_effect = {
+						set_country_flag = crimea_chesspropaganda_flag
+						clr_country_flag = chessplayers_safety_flag2
+					}
 					limit = {
 						has_active_mission = crimia_Anatolys_paranoya
 					}
@@ -743,10 +747,42 @@ crimea_shashki_destroy = {
 
 				add_stability = -0.1
 				add_war_support = -0.05
+				}
+			
+		ai_will_do = {
+			base = 1
+		}
+	}
+	crimea_public_shashi = {
+			icon = generic_civil_support
+			priority = 2
+			allowed = { tag = CRI }
+			fire_only_once = yes
+			days_remove = 60
 				
-				hidden_effect = {
-						#set_country_flag = 
+			visible = {
+				has_country_flag = crimea_chesspropaganda_flag
+			}		
+			cost = 100
+			remove_effect = {
+					add_popularity = {
+					ideology = fascism
+					popularity = 0.05
 					}
+					hidden_effect = {
+						clr_country_flag = crimea_chesspropaganda_flag
+					}
+					limit = {
+						has_active_mission = crimia_Anatolys_paranoya
+					}
+					add_days_mission_timeout  = {
+						mission = crimia_Anatolys_paranoya
+						days = 50
+					}
+			}
+			complete_effect = {
+				add_stability = 0.1
+				add_war_support = 0.05
 				}
 			
 		ai_will_do = {
