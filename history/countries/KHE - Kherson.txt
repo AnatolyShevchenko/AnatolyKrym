@@ -1,0 +1,41 @@
+﻿capital = 196 #Sevastopol, should really be Simferopol but that would require more states so Sevastopol will do
+
+oob = "KHE_1936"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+}
+
+recruit_character = KHE_egor_volosaty
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	fascism = 45
+	communism = 45
+	neutrality = 5
+}
+
+add_ideas = {
+	
+}
+

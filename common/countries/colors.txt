@@ -1209,4 +1209,9 @@ HBC = {
 }
 
 
+KHE = {
+	color = rgb { 0 51 102 }
+	color_ui = rgb { 0 102 204 }
+}
+
 

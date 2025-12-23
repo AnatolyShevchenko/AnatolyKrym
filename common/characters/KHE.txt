@@ -1,0 +1,29 @@
+characters={
+	KHE_egor_volosaty = {
+		name = KHE_egor_volosaty
+		portraits = {
+			army = {
+				large = GFX_egor_volosaty
+			}
+		}
+		
+		corps_commander = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1 
+
+		}
+		
+		country_leader = {
+			ideology = nazism
+			expire = "1950.1.1.1"
+			id = -1
+			traits = {
+            dictator
+			}
+		}
+	}
+	
