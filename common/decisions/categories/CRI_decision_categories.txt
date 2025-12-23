@@ -19,17 +19,17 @@ crimea_operation = {
 	icon = generic_construction
 	priority = 1
 	visible_when_empty = no
-	allowed = { 
-		tag = SOV
+	allowed = { tag = SOV }
 }
 
 crimea_shashki_destroy = {
-	icon = GFX_decision_category_topalov_gym
-	priority = 50
-	picture = GFX_decision_topalov
+	icon = GFX_decision_generic_army_support
+	priority = 2
+	visible = {
+			#has_completed_focus = CRI_KillShashki
+		}
+	picture = GFX_decision_cat_picture_ITA_missiolinis
 	allowed = { tag = CRI }
 	visible_when_empty = no
 }
 
-
-#GFX_generic_army_support

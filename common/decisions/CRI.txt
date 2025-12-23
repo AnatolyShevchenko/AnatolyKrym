@@ -604,18 +604,62 @@ crimea_operation = {
 
 ########################################################### ЧИСТКИПУПОЧНЫЕ ##################################################
 crimea_shashki_destroy = {
-	crimea_shashki_retire = {
-		icon = generic_industry
+	crimia_Anatolys_paranoya = {
+		icon = generic_army_support
 		priority = 100
 		allowed = { tag = CRI }
-		visible = {
-			has_stability > 0.1
+		fire_only_once = yes
+		days_mission_timeout = 120
+		is_good = no
+		available = {
+			hidden_trigger = { always = no }
 		}
+		activation = {
+
+		}
+		timeout_effect = {
+				add_manpower = -125000
+				add_stability = -0.5
+				add_war_support = -0.65
+				add_political_power = -175
+				army_experience = -25
+				air_experience = -25
+				navy_experience = -25
+			}
+			cancel_trigger = {
+				has_completed_focus = CRI_AntiShashkoviySovet
+			} 
+	}
+	
+	crimea_shashki_retire = {
+		icon = generic_civil_support
+		priority = 2
+		allowed = { tag = CRI }
 		fire_only_once = yes
 		days_remove = 60
+		days_re_enable = 15
 		cost = 75
+		available = {
+			hidden_effect = {
+				has_country_flag = chessplayers_safety_flag
+			}
+		}
+		
+		remove_effect = {
+			hidden_effect = {				
+				set_country_flag = remove_effect_flag
+			}
+
+			limit = {
+				has_active_mission = crimia_Anatolys_paranoya
+			}
+			add_days_mission_timeout  = {
+				mission = crimia_Anatolys_paranoya
+				days = 50
+			}
+		}
 		complete_effect = {
-			add_manpower = -10000
+			add_manpower = -1000
 			add_stability = 0.05
 			add_war_support = -0.05
 		}
@@ -623,6 +667,90 @@ crimea_shashki_destroy = {
 			base = 1
 		}
 	}
-}
+	
+	crimea_chessplayers_safety = {
+			icon = generic_civil_support
+			priority = 2
+			allowed = { tag = CRI }
+			fire_only_once = yes
+			days_remove = 60
+			
+			visible = {
+				#has_country_flag = remove_effect_flag
+			}
+			
+			custom_cost_trigger = {
+				has_equipment = { infantry_equipment > 999 }
+				has_political_power > 24
+			}
+			custom_cost_text = decision_cost_pp_25_ie_1000
+			
+			remove_effect = {
+			
+					hidden_effect = {
+						clr_country_flag = chessplayers_safety_flag
+					}
+					
+					limit = {
+						has_active_mission = crimia_Anatolys_paranoya
+					}
+					add_days_mission_timeout  = {
+						mission = crimia_Anatolys_paranoya
+						days = 50
+					}
+			}
+			complete_effect = {
 
-#generic_civil_support
+				add_stability = -0.05
+				add_war_support = 0.05
+			
+				hidden_effect = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = -1000
+					}
+					add_political_power = -25
+					set_country_flag = chessplayers_safety_flag
+				}
+			}
+		}
+	crimea_chesspropaganda = {
+			icon = generic_civil_support
+			priority = 2
+			allowed = { tag = CRI }
+			fire_only_once = yes
+			days_remove = 60
+				
+			visible = {
+				#has_country_flag = remove_effect_flag
+			}		
+		
+			remove_effect = {
+			
+					hidden_effect = {
+						#clr_country_flag = 
+					}
+						
+					limit = {
+						has_active_mission = crimia_Anatolys_paranoya
+					}
+					add_days_mission_timeout  = {
+						mission = crimia_Anatolys_paranoya
+						days = 50
+					}
+			}
+			complete_effect = {
+
+				add_stability = -0.1
+				add_war_support = -0.05
+				
+				hidden_effect = {
+						#set_country_flag = 
+					}
+				}
+			
+		ai_will_do = {
+			base = 1
+		}
+	}
+}

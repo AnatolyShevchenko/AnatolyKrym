@@ -73,5 +73,14 @@
  crimea.15.c: "Мы будем сражаться!"
  burger_ruler: "Бургерный правитель"
  
- crimea_shashki_destroy: "123123"
- crimea_shashki_destroy_desc: "123123123"
+ crimea_shashki_destroy: "Шашковые чистки."
+ crimea_shashki_destroy_desc: "Шашки под подмышки!"
+ 
+ CRI_kill_shaski_disision: "Открывает решение: YШашковые чистки!."
+ crimea_shashki_retire: "Увольнение шашковых рабочих"
+ crimea_chessplayers_safety: "Обезопасить шахматистов"
+ 
+ crimia_Anatolys_paranoya: "Параноя Анатолия"
+ 
+ CRI_communism_party_topalov: "Топалитариат"
+ CRI_communism_party_topalov_long: "Топалитариат"

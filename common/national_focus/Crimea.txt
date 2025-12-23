@@ -695,6 +695,7 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 					add_ideas = { CRI_shashki_chistki }
+					custom_effect_tooltip = CRI_kill_shaski_disision
 				}
 
 	}
