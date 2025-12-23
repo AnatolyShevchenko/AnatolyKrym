@@ -22,3 +22,14 @@ crimea_operation = {
 	allowed = { 
 		tag = SOV
 }
+
+crimea_shashki_destroy = {
+	icon = GFX_decision_category_topalov_gym
+	priority = 50
+	picture = GFX_decision_topalov
+	allowed = { tag = CRI }
+	visible_when_empty = no
+}
+
+
+#GFX_generic_army_support

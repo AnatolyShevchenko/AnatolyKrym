@@ -601,3 +601,28 @@ crimea_operation = {
 			}
  	}
 }
+
+########################################################### ЧИСТКИПУПОЧНЫЕ ##################################################
+crimea_shashki_destroy = {
+	crimea_shashki_retire = {
+		icon = generic_industry
+		priority = 100
+		allowed = { tag = CRI }
+		visible = {
+			has_stability > 0.1
+		}
+		fire_only_once = yes
+		days_remove = 60
+		cost = 75
+		complete_effect = {
+			add_manpower = -10000
+			add_stability = 0.05
+			add_war_support = -0.05
+		}
+		ai_will_do = {
+			base = 1
+		}
+	}
+}
+
+#generic_civil_support
