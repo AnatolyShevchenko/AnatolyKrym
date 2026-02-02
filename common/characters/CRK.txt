@@ -1,0 +1,21 @@
+characters={
+	CRK_shashkovi_sovet = {
+	
+		name = Shashkovi_sovet
+		
+		portraits = {
+			civilian = {
+				large = GFX_shashkovi_sovet
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1999.1.1.1"
+			id = -1
+			traits = {
+            appeaser
+			skillful_diplomat
+        }
+		}
+	}
+}

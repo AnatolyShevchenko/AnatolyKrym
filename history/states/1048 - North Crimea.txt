@@ -1,10 +1,10 @@
 state = {
-	id = 137
-	name = "STATE_137"
-	manpower = 363096
+	id = 1048
+	name = "STATE_1048"
+	manpower = 272321
 	resources = {
-		steel = 7
-		aluminium = 3
+		steel = 3
+		aluminium = 1
 	}
 	
 	state_category = city
@@ -12,25 +12,19 @@ state = {
 	history = {
 
 		owner = CRI
-
+		
+		
 		victory_points = {
-			6704 3 # Yalta
-		}
-
-		victory_points = {
-			705 5 # Simferopol
+			13390 3 # Evpatoria
 		}
 		
 		victory_points = {
-			13380 3 # Alushta
+			13388 3 # Djankoi
 		}
-		
 
 		buildings = {
 
-			infrastructure = 3
-			dockyard = 1
-			air_base = 3
+			infrastructure = 2
 			arms_factory = 2
 			industrial_complex = 2
 
@@ -42,7 +36,7 @@ state = {
 	}
 
 	provinces = {
-		705 6704 13386 13391
+		3722 6724 11649 13387 13388 13389 13390
 	}
 
 	local_supplies = 10.0 

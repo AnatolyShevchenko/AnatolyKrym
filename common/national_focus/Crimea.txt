@@ -35,6 +35,49 @@ focus_tree = {
 			ai_will_do = {
 					factor = 100
 				}
+				
+				select_effect = {
+					
+					country_event = {
+						id = crimea.17
+						days = 7
+					}
+					
+					country_event = {
+						id = crimea.18
+						days = 12
+					}
+					
+					country_event = {
+						id = crimea.19
+						days = 20
+					}
+					
+					country_event = {
+						id = crimea.20
+						days = 31
+					}
+					
+					country_event = {
+						id = crimea.21
+						days = 47
+					}
+					
+					country_event = {
+						id = crimea.22
+						days = 69
+					}
+					
+					country_event = {
+						id = crimea.1
+						days = 89
+					}
+					
+					country_event = {
+						id = crimea.23
+						days = 100
+					}
+				}
 
 	}
 	focus = {
@@ -657,7 +700,10 @@ focus_tree = {
 		y = 4
 			available = {
 					has_government = fascism
-					has_civil_war = no
+					NOT = {
+						has_war_with = CRD
+						has_war_with = CRK
+					}
 				}
 			completion_reward = {
 					hidden_effect = {

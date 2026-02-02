@@ -33,3 +33,14 @@ crimea_shashki_destroy = {
 	visible_when_empty = no
 }
 
+crimea_civil_war = {
+	icon = GFX_decision_generic_army_support
+	priority = 2
+	visible = {
+			has_war_with = CRK
+		}
+	picture = GFX_decision_cat_picture_ITA_missiolinis
+	allowed = { tag = CRI }
+	visible_when_empty = yes
+}
+

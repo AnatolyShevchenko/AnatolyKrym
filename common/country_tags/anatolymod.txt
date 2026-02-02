@@ -1,1 +1,4 @@
 KHE	= "countries/Kherson.txt"
+CRK	= "countries/CW Crimea Communism.txt"
+CRD	= "countries/CW Crimea Democracy.txt"
+CRB	= "countries/British Crimea.txt"

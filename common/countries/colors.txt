@@ -1214,4 +1214,19 @@ KHE = {
 	color_ui = rgb { 0 102 204 }
 }
 
+CRK = {
+	color = rgb { 84 17 17 }
+	color_ui = rgb { 60 5 5 }
+}
+
+CRD = {
+	color = rgb { 220 190 115 }
+	color_ui = rgb { 110 80 60 }
+}
+
+CRB = {
+	color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
 
